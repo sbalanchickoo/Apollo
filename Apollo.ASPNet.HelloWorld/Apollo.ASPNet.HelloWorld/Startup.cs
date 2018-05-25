@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HelloWorld
+namespace Apollo.ASPNet.HelloWorld
 {
     public class Startup
     {

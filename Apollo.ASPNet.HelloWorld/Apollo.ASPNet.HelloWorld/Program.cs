@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace HelloWorld
+namespace Apollo.ASPNet.HelloWorld
 {
     public class Program
     {
@@ -19,7 +19,11 @@ namespace HelloWorld
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseIISIntegration()
                 .UseStartup<Startup>()
+                //.UseUrls("http://localhost:8082/")
                 .Build();
     }
 }
