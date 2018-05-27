@@ -15,6 +15,7 @@ namespace Apollo.ASPNet.HelloWorld
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
+            //comment
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
