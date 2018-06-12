@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  apollo.helloworld.aspnet:
+    image: ${DOCKER_REGISTRY}apollohelloworldaspnet
+    build:
+      context: .
+      dockerfile: Apollo.HelloWorld.ASPNet\Dockerfile
