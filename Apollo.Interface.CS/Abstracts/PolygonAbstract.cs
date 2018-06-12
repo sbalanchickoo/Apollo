@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Apollo.Interface.CS.Concretes
+namespace Apollo.Interface.CS.Abstracts
 {
-    public class PolygonConcrete
+    public abstract class PolygonAbstract
     {
         public int NumberOfSides;
         public int SideLength;
 
-        public PolygonConcrete(int numberOfSides, int sideLength)
+        public PolygonAbstract(int numberOfSides, int sideLength)
         {
             NumberOfSides = numberOfSides;
             SideLength = sideLength;
@@ -21,10 +21,6 @@ namespace Apollo.Interface.CS.Concretes
             return perimeter;
         }
 
-        public virtual double GetArea()
-        {
-            throw new NotImplementedException();
-        }
-        
+        public abstract double GetArea();
     }
 }
