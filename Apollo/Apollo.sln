@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apollo.HelloWorld.ASPNet", 
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FB3CD564-4EAA-4F7D-AA1C-650A3F13336F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.Interface.CS", "..\Apollo.Interface.CS\Apollo.Interface.CS.csproj", "{42B72EE1-7329-4974-8F7E-43FDBA7A90D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apollo.Interface.CS", "Apollo.Interface.CS\Apollo.Interface.CS.csproj", "{19BF92D3-54B4-4094-AE73-345B07FC002C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{FB3CD564-4EAA-4F7D-AA1C-650A3F13336F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB3CD564-4EAA-4F7D-AA1C-650A3F13336F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB3CD564-4EAA-4F7D-AA1C-650A3F13336F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{42B72EE1-7329-4974-8F7E-43FDBA7A90D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42B72EE1-7329-4974-8F7E-43FDBA7A90D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{42B72EE1-7329-4974-8F7E-43FDBA7A90D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{42B72EE1-7329-4974-8F7E-43FDBA7A90D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19BF92D3-54B4-4094-AE73-345B07FC002C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19BF92D3-54B4-4094-AE73-345B07FC002C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19BF92D3-54B4-4094-AE73-345B07FC002C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19BF92D3-54B4-4094-AE73-345B07FC002C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
