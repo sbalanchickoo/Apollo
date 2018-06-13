@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Apollo.Interface.CS.Interfaces
 {
-    public interface PolygonInterface
+    public interface IPolygonInterface
     {
 
         int NumberOfSides { get; set; }
@@ -12,7 +12,7 @@ namespace Apollo.Interface.CS.Interfaces
 
         int GetPerimeter();
 
-        int GetArea();
+        double GetArea();
 
 
     }
