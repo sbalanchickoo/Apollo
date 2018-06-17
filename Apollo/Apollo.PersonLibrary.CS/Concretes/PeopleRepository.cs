@@ -1,13 +1,15 @@
-﻿using Apollo.PersonLibrary.CS.Models;
+﻿using Apollo.PersonLibrary.CS.Interfaces;
+using Apollo.PersonLibrary.CS.Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace Apollo.PersonLibrary.CS.Concretes
 {
-    public class PeopleRepository
+    public class PeopleRepository : IPersonRepository
     {
         //public Person[] GetPeople()
+        //public List<Person> GetPeople()
         public List<Person> GetPeople()
         {
             //var People = new Person[]

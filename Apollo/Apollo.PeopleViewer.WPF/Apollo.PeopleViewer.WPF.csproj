@@ -94,10 +94,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Apollo\Apollo.PersonLibrary.CS\Apollo.PersonLibrary.CS.csproj">
-      <Project>{a1702a5b-7423-45a7-b663-c117119b4a74}</Project>
-      <Name>Apollo.PersonLibrary.CS</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
