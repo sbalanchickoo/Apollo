@@ -6,11 +6,11 @@ using System.Collections.Generic;
 
 namespace Apollo.PersonLibrary.CS.Concretes
 {
-    public class PeopleRepository : IPersonRepository
+    public class PeopleRepository //: IPersonRepository
     {
         //public Person[] GetPeople()
-        //public List<Person> GetPeople()
         public List<Person> GetPeople()
+        //public <Person> GetPeople()
         {
             //var People = new Person[]
             var People = new List<Person>
