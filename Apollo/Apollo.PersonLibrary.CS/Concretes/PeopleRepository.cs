@@ -6,10 +6,11 @@ using System.Collections.Generic;
 
 namespace Apollo.PersonLibrary.CS.Concretes
 {
-    public class PeopleRepository //: IPersonRepository
+    public class PeopleRepository : IPersonRepository
     {
         //public Person[] GetPeople()
-        public List<Person> GetPeople()
+        //public List<Person> GetPeople()
+        IEnumerable<Person> IPersonRepository.GetPeople()
         //public <Person> GetPeople()
         {
             //var People = new Person[]
@@ -20,25 +21,25 @@ namespace Apollo.PersonLibrary.CS.Concretes
             };
             return People;
         }
-
-        public Person GetPerson()
+        
+        Person IPersonRepository.GetPerson()
         {
             throw new NotImplementedException();
         }
 
-        public void AddPerson()
+        void IPersonRepository.AddPerson()
         {
-
+            throw new NotImplementedException();
         }
 
-        public void UpdatePerson(string lastName, Person updatedPerson)
+        void IPersonRepository.UpdatePerson(string lastName, Person updatedPerson)
         {
-
+            throw new NotImplementedException();
         }
 
-        public void DeletePerson(string lastName, string firstName)
+        void IPersonRepository.DeletePerson(string lastName, string firstName)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

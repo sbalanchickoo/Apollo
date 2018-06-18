@@ -16,6 +16,19 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.PersonLibrary.CS", "Apollo.PersonLibrary.CS\Apollo.PersonLibrary.CS.csproj", "{A1702A5B-7423-45A7-B663-C117119B4A74}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.PeopleViewer.WPF", "Apollo.PeopleViewer.WPF\Apollo.PeopleViewer.WPF.csproj", "{11BA89C0-0380-4950-A13B-5E96B5C8F97E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{828DC25F-393B-4A76-81F8-29451C6782A6} = {828DC25F-393B-4A76-81F8-29451C6782A6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.PersonService.SVC", "Apollo.PersonService.SVC\Apollo.PersonService.SVC.csproj", "{4B4F6450-F41D-429C-9975-A337BBB43646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.PeopleService.SVC", "Apollo.PeopleService.SVC\Apollo.PeopleService.SVC.csproj", "{828DC25F-393B-4A76-81F8-29451C6782A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "People", "People", "{B3763297-2035-4DF4-9FD7-0F4A3C9E8DE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{AB70404B-B0A7-4DFB-8343-D635C6639E48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.PersonRepository.Interface", "PersonRepository.Interface\Apollo.PersonRepository.Interface.csproj", "{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,9 +64,25 @@ Global
 		{11BA89C0-0380-4950-A13B-5E96B5C8F97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11BA89C0-0380-4950-A13B-5E96B5C8F97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11BA89C0-0380-4950-A13B-5E96B5C8F97E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4F6450-F41D-429C-9975-A337BBB43646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4F6450-F41D-429C-9975-A337BBB43646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4F6450-F41D-429C-9975-A337BBB43646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4F6450-F41D-429C-9975-A337BBB43646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828DC25F-393B-4A76-81F8-29451C6782A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828DC25F-393B-4A76-81F8-29451C6782A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828DC25F-393B-4A76-81F8-29451C6782A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828DC25F-393B-4A76-81F8-29451C6782A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB70404B-B0A7-4DFB-8343-D635C6639E48} = {B3763297-2035-4DF4-9FD7-0F4A3C9E8DE5}
+		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C} = {AB70404B-B0A7-4DFB-8343-D635C6639E48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0B2DACF-D9B4-4358-AEC2-CCBC55A8C1C8}
