@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Windows;
 using Apollo.PersonLibrary.CS.Concretes;
 using Apollo.PersonLibrary.CS.Interfaces;
-using Apollo.PersonLibrary.CS.Models;
+using Apollo.PeopleViewer.WPF.PeopleService;
+using Apollo.People.SVC;
+using Apollo.People.SVC.Models;
 
 namespace Apollo.PeopleViewer.WPF
 {
@@ -12,8 +14,8 @@ namespace Apollo.PeopleViewer.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        IPersonRepository peopleRepo = new PeopleRepository();
-
+        IPersonRepository people = new PeopleRepository();
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace Apollo.PeopleViewer.WPF
         {
             ClearPeopleBox();
             //Person[] people;
-            List<Person> people;
+            //List<Person> people;
             //people = peopleRepo.GetPeople();
             //PeopleBox.ItemsSource = people;
         }

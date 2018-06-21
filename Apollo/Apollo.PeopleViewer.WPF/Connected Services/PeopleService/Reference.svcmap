@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="db6f2d0a-dfe1-490e-a953-ccb544145825" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52494/People.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="People.xsd" MetadataType="Schema" ID="76d82f9d-c80f-4402-b0c9-a7b3eb42b912" SourceId="1" SourceUrl="http://localhost:52494/People.svc?xsd=xsd0" />
+    <MetadataFile FileName="People1.xsd" MetadataType="Schema" ID="c7f2f190-8909-4daa-a9c2-0887f9e58ac1" SourceId="1" SourceUrl="http://localhost:52494/People.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="0e8fd998-f298-4075-95dd-bbd59eb6cd3d" SourceId="1" SourceUrl="http://localhost:52494/People.svc?wsdl" />
+    <MetadataFile FileName="People.disco" MetadataType="Disco" ID="c390771e-d5e8-470c-9d3e-6fab1235ae33" SourceId="1" SourceUrl="http://localhost:52494/People.svc?disco" />
+    <MetadataFile FileName="People2.xsd" MetadataType="Schema" ID="40a7e7d9-61d2-4f1f-b159-14b1cf277b82" SourceId="1" SourceUrl="http://localhost:52494/People.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

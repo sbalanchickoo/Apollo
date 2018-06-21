@@ -8,14 +8,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Apollo.PeopleViewer.WPF.ServiceReference1 {
+namespace Apollo.PeopleViewer.WPF.PeopleService {
     using System.Runtime.Serialization;
     using System;
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/Apollo.PeopleService.SVC")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/Apollo.People.SVC")]
     [System.SerializableAttribute()]
     public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -75,46 +75,46 @@ namespace Apollo.PeopleViewer.WPF.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
-    public interface IService1 {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="PeopleService.IPeopleService")]
+    public interface IPeopleService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetData", ReplyAction="http://tempuri.org/IPeopleService/GetDataResponse")]
         string GetData(int value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetData", ReplyAction="http://tempuri.org/IPeopleService/GetDataResponse")]
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        Apollo.PeopleViewer.WPF.ServiceReference1.CompositeType GetDataUsingDataContract(Apollo.PeopleViewer.WPF.ServiceReference1.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IPeopleService/GetDataUsingDataContractResponse")]
+        Apollo.PeopleViewer.WPF.PeopleService.CompositeType GetDataUsingDataContract(Apollo.PeopleViewer.WPF.PeopleService.CompositeType composite);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<Apollo.PeopleViewer.WPF.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(Apollo.PeopleViewer.WPF.ServiceReference1.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IPeopleService/GetDataUsingDataContractResponse")]
+        System.Threading.Tasks.Task<Apollo.PeopleViewer.WPF.PeopleService.CompositeType> GetDataUsingDataContractAsync(Apollo.PeopleViewer.WPF.PeopleService.CompositeType composite);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : Apollo.PeopleViewer.WPF.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    public interface IPeopleServiceChannel : Apollo.PeopleViewer.WPF.PeopleService.IPeopleService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<Apollo.PeopleViewer.WPF.ServiceReference1.IService1>, Apollo.PeopleViewer.WPF.ServiceReference1.IService1 {
+    public partial class PeopleServiceClient : System.ServiceModel.ClientBase<Apollo.PeopleViewer.WPF.PeopleService.IPeopleService>, Apollo.PeopleViewer.WPF.PeopleService.IPeopleService {
         
-        public Service1Client() {
+        public PeopleServiceClient() {
         }
         
-        public Service1Client(string endpointConfigurationName) : 
+        public PeopleServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
+        public PeopleServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public PeopleServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public PeopleServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
@@ -126,11 +126,11 @@ namespace Apollo.PeopleViewer.WPF.ServiceReference1 {
             return base.Channel.GetDataAsync(value);
         }
         
-        public Apollo.PeopleViewer.WPF.ServiceReference1.CompositeType GetDataUsingDataContract(Apollo.PeopleViewer.WPF.ServiceReference1.CompositeType composite) {
+        public Apollo.PeopleViewer.WPF.PeopleService.CompositeType GetDataUsingDataContract(Apollo.PeopleViewer.WPF.PeopleService.CompositeType composite) {
             return base.Channel.GetDataUsingDataContract(composite);
         }
         
-        public System.Threading.Tasks.Task<Apollo.PeopleViewer.WPF.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(Apollo.PeopleViewer.WPF.ServiceReference1.CompositeType composite) {
+        public System.Threading.Tasks.Task<Apollo.PeopleViewer.WPF.PeopleService.CompositeType> GetDataUsingDataContractAsync(Apollo.PeopleViewer.WPF.PeopleService.CompositeType composite) {
             return base.Channel.GetDataUsingDataContractAsync(composite);
         }
     }

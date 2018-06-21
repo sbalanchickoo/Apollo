@@ -64,7 +64,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+    <Compile Include="Connected Services\PeopleService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -92,19 +92,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\ServiceReference1\Apollo.PeopleViewer.WPF.ServiceReference1.CompositeType.datasource">
+    <None Include="Connected Services\PeopleService\Apollo.PeopleViewer.WPF.PeopleService.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\Service1.wsdl" />
-    <None Include="Connected Services\ServiceReference1\Service1.xsd">
+    <None Include="Connected Services\PeopleService\People.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\Service11.xsd">
+    <None Include="Connected Services\PeopleService\People1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\Service12.xsd">
+    <None Include="Connected Services\PeopleService\People2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\PeopleService\Service1.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -123,19 +123,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\PeopleService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\Service1.disco" />
+    <None Include="Connected Services\PeopleService\People.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\PeopleService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\PeopleService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+    <None Include="Connected Services\PeopleService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
