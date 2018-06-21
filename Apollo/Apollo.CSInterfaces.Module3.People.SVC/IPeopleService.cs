@@ -13,7 +13,6 @@ namespace Apollo.CSInterfaces.Module3.People.SVC
     [ServiceContract]
     public interface IPeopleService
     {
-
         [OperationContract]
         IEnumerable<Person> GetPeople();
 
