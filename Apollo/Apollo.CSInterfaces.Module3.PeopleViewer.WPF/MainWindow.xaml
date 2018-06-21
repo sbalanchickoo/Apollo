@@ -1,0 +1,56 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Apollo.PeopleViewer.WPF"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" 
+        x:Class="Apollo.CSInterfaces.Module3.PeopleViewer.WPF.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="GetPeopleConcrete" 
+                Content="Get People Concrete" 
+                HorizontalAlignment="Left" 
+                Margin="51,10,0,0" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Click="GetPeopleConcrete_Click"/>
+        <Button x:Name="GetPeopleInterface" 
+                Content="Get People Interface" 
+                HorizontalAlignment="Left" 
+                Margin="51,75,0,0" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Click="GetPeopleInterface_Click"/>
+        <ListBox x:Name="PeopleBox" 
+                 HorizontalAlignment="Left" 
+                 Height="300" 
+                 Margin="207,10,0,0" 
+                 VerticalAlignment="Top" 
+                 Width="300">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel 
+                        Orientation="Horizontal" 
+                        IsItemsHost="True" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text ="{Binding FirstName}"/>
+                        <TextBlock Text ="{Binding LastName}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="Clear" 
+                Content="Clear" 
+                HorizontalAlignment="Left" 
+                Margin="51,154,0,0" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Click="Clear_Click"/>
+    </Grid>
+</Window>

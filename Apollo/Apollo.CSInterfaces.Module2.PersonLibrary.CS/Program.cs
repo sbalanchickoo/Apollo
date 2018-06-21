@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GradeStatistics
+namespace Apollo.CSInterfaces.Module2.PersonLibrary.CS
 {
-    public class GradeBook
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }

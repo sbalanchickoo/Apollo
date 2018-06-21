@@ -9,24 +9,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.EventAggregatorTest.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apollo.HelloWorld.ASPNet", "Apollo.HelloWorld.ASPNet\Apollo.HelloWorld.ASPNet.csproj", "{9A34518F-4BB2-4A6F-B73E-3B2CFFE71675}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FB3CD564-4EAA-4F7D-AA1C-650A3F13336F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apollo.CSInterfaces.Module1.Interface.CS", "Apollo.CSInterfaces.Module1.Interface.CS\Apollo.CSInterfaces.Module1.Interface.CS.csproj", "{6BA1EF29-5C72-4D5D-903C-7669F1D7108C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apollo.Interface.CS", "Apollo.Interface.CS\Apollo.Interface.CS.csproj", "{19BF92D3-54B4-4094-AE73-345B07FC002C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.CSInterfaces.Module2.PeopleViewer.WPF", "Apollo.CSInterfaces.Module2.PeopleViewer.WPF\Apollo.CSInterfaces.Module2.PeopleViewer.WPF.csproj", "{11BA89C0-0380-4950-A13B-5E96B5C8F97E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.PersonLibrary.CS", "Apollo.PersonLibrary.CS\Apollo.PersonLibrary.CS.csproj", "{A1702A5B-7423-45A7-B663-C117119B4A74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.CSInterfaces.Module2.PersonLibrary.CS", "Apollo.CSInterfaces.Module2.PersonLibrary.CS\Apollo.CSInterfaces.Module2.PersonLibrary.CS.csproj", "{A1702A5B-7423-45A7-B663-C117119B4A74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.PeopleViewer.WPF", "Apollo.PeopleViewer.WPF\Apollo.PeopleViewer.WPF.csproj", "{11BA89C0-0380-4950-A13B-5E96B5C8F97E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{FEB41959-284B-4FAF-B283-65842EE99475} = {FEB41959-284B-4FAF-B283-65842EE99475}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.CSInterfaces.Module3.People.SVC", "Apollo.CSInterfaces.Module3.People.SVC\Apollo.CSInterfaces.Module3.People.SVC.csproj", "{FEB41959-284B-4FAF-B283-65842EE99475}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "People", "People", "{B3763297-2035-4DF4-9FD7-0F4A3C9E8DE5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSInterfaces.Module1", "CSInterfaces.Module1", "{BD4967E4-8B3F-4AF0-A9CF-D2AF75961E8D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{AB70404B-B0A7-4DFB-8343-D635C6639E48}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSInterfaces.Module2", "CSInterfaces.Module2", "{B764ECBF-5CAF-463F-A1CA-248AE87A5713}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.PersonRepository.Interface", "PersonRepository.Interface\Apollo.PersonRepository.Interface.csproj", "{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSInterfaces.Module3", "CSInterfaces.Module3", "{A688D535-DD43-46E8-89FA-8FD37471F7DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.People.SVC", "Apollo.People.SVC\Apollo.People.SVC.csproj", "{FEB41959-284B-4FAF-B283-65842EE99475}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.CSInterfaces.Module3.PeopleViewer.WPF", "Apollo.CSInterfaces.Module3.PeopleViewer.WPF\Apollo.CSInterfaces.Module3.PeopleViewer.WPF.csproj", "{57577AD4-F006-48CE-90EC-6C555A04B590}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,37 +43,36 @@ Global
 		{9A34518F-4BB2-4A6F-B73E-3B2CFFE71675}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A34518F-4BB2-4A6F-B73E-3B2CFFE71675}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A34518F-4BB2-4A6F-B73E-3B2CFFE71675}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB3CD564-4EAA-4F7D-AA1C-650A3F13336F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB3CD564-4EAA-4F7D-AA1C-650A3F13336F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB3CD564-4EAA-4F7D-AA1C-650A3F13336F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB3CD564-4EAA-4F7D-AA1C-650A3F13336F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{19BF92D3-54B4-4094-AE73-345B07FC002C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19BF92D3-54B4-4094-AE73-345B07FC002C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19BF92D3-54B4-4094-AE73-345B07FC002C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19BF92D3-54B4-4094-AE73-345B07FC002C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1702A5B-7423-45A7-B663-C117119B4A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1702A5B-7423-45A7-B663-C117119B4A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1702A5B-7423-45A7-B663-C117119B4A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1702A5B-7423-45A7-B663-C117119B4A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA1EF29-5C72-4D5D-903C-7669F1D7108C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA1EF29-5C72-4D5D-903C-7669F1D7108C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA1EF29-5C72-4D5D-903C-7669F1D7108C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA1EF29-5C72-4D5D-903C-7669F1D7108C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{11BA89C0-0380-4950-A13B-5E96B5C8F97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{11BA89C0-0380-4950-A13B-5E96B5C8F97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11BA89C0-0380-4950-A13B-5E96B5C8F97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11BA89C0-0380-4950-A13B-5E96B5C8F97E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1702A5B-7423-45A7-B663-C117119B4A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1702A5B-7423-45A7-B663-C117119B4A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1702A5B-7423-45A7-B663-C117119B4A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1702A5B-7423-45A7-B663-C117119B4A74}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FEB41959-284B-4FAF-B283-65842EE99475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FEB41959-284B-4FAF-B283-65842EE99475}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB41959-284B-4FAF-B283-65842EE99475}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEB41959-284B-4FAF-B283-65842EE99475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57577AD4-F006-48CE-90EC-6C555A04B590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57577AD4-F006-48CE-90EC-6C555A04B590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57577AD4-F006-48CE-90EC-6C555A04B590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57577AD4-F006-48CE-90EC-6C555A04B590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{AB70404B-B0A7-4DFB-8343-D635C6639E48} = {B3763297-2035-4DF4-9FD7-0F4A3C9E8DE5}
-		{E2BB8665-6801-4051-9C89-ECFDC7AE0B8C} = {AB70404B-B0A7-4DFB-8343-D635C6639E48}
+		{6BA1EF29-5C72-4D5D-903C-7669F1D7108C} = {BD4967E4-8B3F-4AF0-A9CF-D2AF75961E8D}
+		{11BA89C0-0380-4950-A13B-5E96B5C8F97E} = {B764ECBF-5CAF-463F-A1CA-248AE87A5713}
+		{A1702A5B-7423-45A7-B663-C117119B4A74} = {B764ECBF-5CAF-463F-A1CA-248AE87A5713}
+		{FEB41959-284B-4FAF-B283-65842EE99475} = {A688D535-DD43-46E8-89FA-8FD37471F7DD}
+		{57577AD4-F006-48CE-90EC-6C555A04B590} = {A688D535-DD43-46E8-89FA-8FD37471F7DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0B2DACF-D9B4-4358-AEC2-CCBC55A8C1C8}
