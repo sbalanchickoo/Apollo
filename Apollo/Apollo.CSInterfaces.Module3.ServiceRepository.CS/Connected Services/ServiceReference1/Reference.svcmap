@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="13e22561-e77a-4dc5-b1a6-16878deac7bf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52494/ServiceRepo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceRepo.xsd" MetadataType="Schema" ID="e4d933d3-1f03-4084-81ce-f15ef6349f46" SourceId="1" SourceUrl="http://localhost:52494/ServiceRepo.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceRepo1.xsd" MetadataType="Schema" ID="56b62033-7bab-47d2-8cd1-9ca7bd7ee59b" SourceId="1" SourceUrl="http://localhost:52494/ServiceRepo.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceRepo2.xsd" MetadataType="Schema" ID="73bfdfcd-3602-47dd-9dc7-e4a2f8a8274f" SourceId="1" SourceUrl="http://localhost:52494/ServiceRepo.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceRepo.wsdl" MetadataType="Wsdl" ID="f3f67038-9d4e-4bdc-97da-0c8a7a9c19aa" SourceId="1" SourceUrl="http://localhost:52494/ServiceRepo.svc?wsdl" />
+    <MetadataFile FileName="ServiceRepo.disco" MetadataType="Disco" ID="9a60c00c-aaea-433b-bfc5-69d159b84c2a" SourceId="1" SourceUrl="http://localhost:52494/ServiceRepo.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

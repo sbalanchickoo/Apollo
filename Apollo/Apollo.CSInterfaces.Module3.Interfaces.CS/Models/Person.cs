@@ -1,4 +1,4 @@
-﻿namespace Apollo.CSInterfaces.Module3.People.SVC.Models
+﻿namespace Apollo.CSInterfaces.Module3.Interfaces.CS.Models
 {
     public class Person
     {

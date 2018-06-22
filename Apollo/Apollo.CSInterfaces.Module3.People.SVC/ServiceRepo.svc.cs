@@ -1,4 +1,4 @@
-﻿using Apollo.CSInterfaces.Module3.People.SVC.Models;
+﻿using Apollo.CSInterfaces.Module3.Interfaces.CS.Models;
 using System;
 using System.Collections.Generic;
 
@@ -8,7 +8,7 @@ namespace Apollo.CSInterfaces.Module3.People.SVC
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class ServiceRepo : IPeopleService
     {
-        public IEnumerable<Person> GetPeople()
+        public List<Person> GetPeople()
         {
             var People = new List<Person>
             {
@@ -18,7 +18,7 @@ namespace Apollo.CSInterfaces.Module3.People.SVC
             return People;
         }
 
-        Person IPeopleService.GetPerson()
+        public Person GetPerson()
         {
             throw new NotImplementedException();
         }

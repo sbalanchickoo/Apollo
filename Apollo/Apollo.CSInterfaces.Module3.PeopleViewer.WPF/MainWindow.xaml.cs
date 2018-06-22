@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using Apollo.CSInterfaces.Module3.Interfaces.CS;
+using System.Collections.Generic;
 using System.Windows;
+using Apollo.CSInterfaces.Module3.ServiceRepository.CS.ServiceReference1;
 
 namespace Apollo.CSInterfaces.Module3.PeopleViewer.WPF
 {
@@ -8,7 +10,7 @@ namespace Apollo.CSInterfaces.Module3.PeopleViewer.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        //IPersonRepository peopleRepo = new PeopleRepository();
+        IPersonRepository peopleRepo;
         
         public MainWindow()
         {
@@ -25,7 +27,8 @@ namespace Apollo.CSInterfaces.Module3.PeopleViewer.WPF
         private void GetPeopleInterface_Click(object sender, RoutedEventArgs e)
         {
             ClearPeopleBox();
-            //PeopleBox.ItemsSource = peopleRepo.GetPeople();
+            peopleRepo = new ServiceRepository.CS.ServiceRepository();
+            PeopleBox.ItemsSource = peopleRepo.GetPeople();
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
@@ -35,8 +38,7 @@ namespace Apollo.CSInterfaces.Module3.PeopleViewer.WPF
 
         private void ClearPeopleBox()
         {
-            //PeopleBox.Items.Clear();
-            //PeopleBox.ItemsSource = null;
+            PeopleBox.ItemsSource = null;
         }
     }
 }

@@ -134,5 +134,15 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apollo.CSInterfaces.Module3.Interfaces.CS\Apollo.CSInterfaces.Module3.Interfaces.CS.csproj">
+      <Project>{dc64b708-1d5b-4642-a0ef-b0c73baa0d57}</Project>
+      <Name>Apollo.CSInterfaces.Module3.Interfaces.CS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apollo.CSInterfaces.Module3.ServiceRepository.CS\Apollo.CSInterfaces.Module3.ServiceRepository.CS.csproj">
+      <Project>{d0801072-db07-4800-a8f6-ef12033c5e3c}</Project>
+      <Name>Apollo.CSInterfaces.Module3.ServiceRepository.CS</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

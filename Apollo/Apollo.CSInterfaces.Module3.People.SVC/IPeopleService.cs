@@ -1,4 +1,4 @@
-﻿using Apollo.CSInterfaces.Module3.People.SVC.Models;
+﻿using Apollo.CSInterfaces.Module3.Interfaces.CS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace Apollo.CSInterfaces.Module3.People.SVC
     public interface IPeopleService
     {
         [OperationContract]
-        IEnumerable<Person> GetPeople();
+        List<Person> GetPeople();
 
         [OperationContract]
         Person GetPerson();
