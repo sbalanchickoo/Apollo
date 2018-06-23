@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Apollo.CSInterfaces.Module3.ServiceRepository.CS
 {
-    public class ServiceRepository : IPersonRepository
+    public class ServiceRepo : IPersonRepository
     {
         PeopleServiceClient peopleService = new PeopleServiceClient();
 

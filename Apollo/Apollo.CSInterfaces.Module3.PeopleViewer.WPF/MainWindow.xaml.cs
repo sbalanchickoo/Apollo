@@ -1,7 +1,5 @@
 ﻿using Apollo.CSInterfaces.Module3.Interfaces.CS;
-using System.Collections.Generic;
 using System.Windows;
-using Apollo.CSInterfaces.Module3.ServiceRepository.CS.ServiceReference1;
 
 namespace Apollo.CSInterfaces.Module3.PeopleViewer.WPF
 {
@@ -10,25 +8,33 @@ namespace Apollo.CSInterfaces.Module3.PeopleViewer.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        IPersonRepository peopleRepo;
         
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void GetPeopleConcrete_Click(object sender, RoutedEventArgs e)
+        private void GetPeopleCSV_Click(object sender, RoutedEventArgs e)
         {
             ClearPeopleBox();
-            //IEnumerable<Person> people = peopleRepo.GetPeople();
-            //PeopleBox.ItemsSource = people;
+            IPersonRepository peopleRepo = FetchRepo("CSV");
+            PeopleBox.ItemsSource = peopleRepo.GetPeople();
+            ShowRepositoryType(peopleRepo);
         }
 
-        private void GetPeopleInterface_Click(object sender, RoutedEventArgs e)
+        private void GetPeopleService_Click(object sender, RoutedEventArgs e)
         {
             ClearPeopleBox();
-            peopleRepo = new ServiceRepository.CS.ServiceRepository();
+            IPersonRepository peopleRepo = FetchRepo("Service");
             PeopleBox.ItemsSource = peopleRepo.GetPeople();
+            ShowRepositoryType(peopleRepo);
+        }
+
+        private IPersonRepository FetchRepo(string repoType)
+        {
+            IPersonRepository peopleRepo;
+            peopleRepo = RepositoryFactory.GetRepository(repoType);
+            return peopleRepo;
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
@@ -39,6 +45,12 @@ namespace Apollo.CSInterfaces.Module3.PeopleViewer.WPF
         private void ClearPeopleBox()
         {
             PeopleBox.ItemsSource = null;
+        }
+
+        private void ShowRepositoryType(IPersonRepository repository)
+        {
+            MessageBox.Show(string.Format("Repository Type:\n{0}",
+                repository.GetType().ToString()));
         }
     }
 }

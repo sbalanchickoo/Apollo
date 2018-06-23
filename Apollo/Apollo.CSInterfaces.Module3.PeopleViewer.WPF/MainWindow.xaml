@@ -9,20 +9,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="GetPeopleConcrete" 
-                Content="Get People Concrete" 
+        <Button x:Name="GetPeopleService" 
+                Content="Get People Service" 
                 HorizontalAlignment="Left" 
                 Margin="51,10,0,0" 
                 VerticalAlignment="Top" 
                 Width="150" 
-                Click="GetPeopleConcrete_Click"/>
-        <Button x:Name="GetPeopleInterface" 
-                Content="Get People Interface" 
+                Click="GetPeopleService_Click"/>
+        <Button x:Name="GetPeopleCSV" 
+                Content="Get People CSV" 
                 HorizontalAlignment="Left" 
                 Margin="51,75,0,0" 
                 VerticalAlignment="Top" 
                 Width="150" 
-                Click="GetPeopleInterface_Click"/>
+                Click="GetPeopleCSV_Click"/>
         <ListBox x:Name="PeopleBox" 
                  HorizontalAlignment="Left" 
                  Height="300" 

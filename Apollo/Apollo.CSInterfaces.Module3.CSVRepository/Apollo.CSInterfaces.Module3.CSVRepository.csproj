@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D0801072-DB07-4800-A8F6-EF12033C5E3C}</ProjectGuid>
+    <ProjectGuid>{C803831F-D4CE-4949-83CF-ACE75B57DBA6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Apollo.CSInterfaces.Module3.ServiceRepository.CS</RootNamespace>
-    <AssemblyName>Apollo.CSInterfaces.Module3.ServiceRepository.CS</AssemblyName>
+    <RootNamespace>Apollo.CSInterfaces.Module3.CSVRepository</RootNamespace>
+    <AssemblyName>Apollo.CSInterfaces.Module3.CSVRepository</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,9 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,54 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="ServiceRepo.cs" />
+    <Compile Include="CSVRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Apollo.CSInterfaces.Module3.Interfaces.CS\Apollo.CSInterfaces.Module3.Interfaces.CS.csproj">
-      <Project>{dc64b708-1d5b-4642-a0ef-b0c73baa0d57}</Project>
+      <Project>{DC64B708-1D5B-4642-A0EF-B0C73BAA0D57}</Project>
       <Name>Apollo.CSInterfaces.Module3.Interfaces.CS</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Connected Services\ServiceReference1\ServiceRepo.wsdl" />
-    <None Include="Connected Services\ServiceReference1\ServiceRepo.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceReference1\ServiceRepo1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceReference1\ServiceRepo2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Properties\DataSources\Apollo.CSInterfaces.Module3.Interfaces.CS.Models.Person.datasource" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\ServiceRepo.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.CSInterfaces.Module3
 		{FEB41959-284B-4FAF-B283-65842EE99475} = {FEB41959-284B-4FAF-B283-65842EE99475}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.CSInterfaces.Module3.CSVRepository", "Apollo.CSInterfaces.Module3.CSVRepository\Apollo.CSInterfaces.Module3.CSVRepository.csproj", "{C803831F-D4CE-4949-83CF-ACE75B57DBA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +84,10 @@ Global
 		{D0801072-DB07-4800-A8F6-EF12033C5E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0801072-DB07-4800-A8F6-EF12033C5E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0801072-DB07-4800-A8F6-EF12033C5E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C803831F-D4CE-4949-83CF-ACE75B57DBA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C803831F-D4CE-4949-83CF-ACE75B57DBA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C803831F-D4CE-4949-83CF-ACE75B57DBA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C803831F-D4CE-4949-83CF-ACE75B57DBA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +102,7 @@ Global
 		{963FA778-813B-4503-ADA5-022CC255CC18} = {A688D535-DD43-46E8-89FA-8FD37471F7DD}
 		{DC64B708-1D5B-4642-A0EF-B0C73BAA0D57} = {963FA778-813B-4503-ADA5-022CC255CC18}
 		{D0801072-DB07-4800-A8F6-EF12033C5E3C} = {963FA778-813B-4503-ADA5-022CC255CC18}
+		{C803831F-D4CE-4949-83CF-ACE75B57DBA6} = {963FA778-813B-4503-ADA5-022CC255CC18}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0B2DACF-D9B4-4358-AEC2-CCBC55A8C1C8}
