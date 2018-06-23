@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Apollo.CSInterfaces.Module4.People.SVC.ServiceRepo2" CodeBehind="ServiceRepo2.svc.cs" %>
