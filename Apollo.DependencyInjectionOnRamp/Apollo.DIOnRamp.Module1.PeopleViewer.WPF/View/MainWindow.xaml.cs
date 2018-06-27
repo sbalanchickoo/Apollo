@@ -1,7 +1,8 @@
-﻿using Apollo.CSInterfaces.Module4.Interfaces.CS;
+﻿using Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Interface;
+using Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Shared;
 using System.Windows;
 
-namespace Apollo.CSInterfaces.Module4.PeopleViewer.WPF
+namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

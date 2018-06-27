@@ -1,4 +1,4 @@
-﻿namespace Apollo.CSInterfaces.Module4.Interfaces.CS.Models
+﻿namespace Apollo.DIOnRamp.Module1.People.SVC.Model
 {
     public class Person
     {

@@ -1,4 +1,4 @@
-﻿namespace Apollo.CSInterfaces.Module4.Interfaces.CS.Models
+﻿namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Model
 {
     public class Person
     {

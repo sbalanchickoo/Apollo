@@ -59,7 +59,7 @@
     </ApplicationDefinition>
     <Compile Include="Interface\IPersonRepository.cs" />
     <Compile Include="Model\Person.cs" />
-    <Compile Include="Model\ServiceRepo2.cs" />
+    <Compile Include="Model\ServiceRepo.cs" />
     <Compile Include="Shared\RepositoryFactory.cs" />
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

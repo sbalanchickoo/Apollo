@@ -1,11 +1,7 @@
-﻿using Apollo.CSInterfaces.Module4.Interfaces.CS.Models;
-using System;
+﻿using Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Apollo.CSInterfaces.Module4.Interfaces.CS
+namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Interface
 {
     public interface IPersonRepository
     {

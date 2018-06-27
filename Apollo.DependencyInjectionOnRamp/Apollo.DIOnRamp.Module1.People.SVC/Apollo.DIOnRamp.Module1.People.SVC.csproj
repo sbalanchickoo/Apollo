@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Apollo.CSInterfaces.Module4.People.SVC</RootNamespace>
-    <AssemblyName>Apollo.CSInterfaces.Module4.People.SVC</AssemblyName>
+    <RootNamespace>Apollo.DIOnRamp.Module1.People.SVC</RootNamespace>
+    <AssemblyName>Apollo.DIOnRamp.Module1.People.SVC</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
