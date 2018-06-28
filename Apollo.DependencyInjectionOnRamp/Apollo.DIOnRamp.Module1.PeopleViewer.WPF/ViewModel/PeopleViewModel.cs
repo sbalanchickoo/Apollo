@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Apollo.DIOnRamp.Module1.ViewModel.CS
 {
-    public class Class1
+    public class PeopleViewModel
     {
     }
 }

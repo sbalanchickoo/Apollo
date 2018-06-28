@@ -1,5 +1,6 @@
 ﻿using Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Model;
 using Apollo.DIOnRamp.Module1.Shared.Interface;
+using Apollo.DIOnRamp.Module1.ViewModel.CS;
 using System.Windows;
 
 namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.View
@@ -13,6 +14,7 @@ namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.View
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new PeopleViewModel();
         }
 
         private void GetPeople_Click(object sender, RoutedEventArgs e)

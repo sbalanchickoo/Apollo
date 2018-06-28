@@ -9,114 +9,29 @@
 //------------------------------------------------------------------------------
 
 namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1 {
-    using System.Runtime.Serialization;
-    using System;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Person", Namespace="http://schemas.datacontract.org/2004/07/Apollo.DIOnRamp.Module1.People.SVC.Model")]
-    [System.SerializableAttribute()]
-    public partial class Person : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string FirstNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LastNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int PersonIdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string FirstName {
-            get {
-                return this.FirstNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
-                    this.FirstNameField = value;
-                    this.RaisePropertyChanged("FirstName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string LastName {
-            get {
-                return this.LastNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
-                    this.LastNameField = value;
-                    this.RaisePropertyChanged("LastName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int PersonId {
-            get {
-                return this.PersonIdField;
-            }
-            set {
-                if ((this.PersonIdField.Equals(value) != true)) {
-                    this.PersonIdField = value;
-                    this.RaisePropertyChanged("PersonId");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IPeopleService")]
     public interface IPeopleService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetPeople", ReplyAction="http://tempuri.org/IPeopleService/GetPeopleResponse")]
-        System.Collections.Generic.List<Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person> GetPeople();
+        System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Model.Person> GetPeople();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetPeople", ReplyAction="http://tempuri.org/IPeopleService/GetPeopleResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.List<Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person>> GetPeopleAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Model.Person>> GetPeopleAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetPerson", ReplyAction="http://tempuri.org/IPeopleService/GetPersonResponse")]
-        Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person GetPerson();
+        Apollo.DIOnRamp.Module1.Shared.Model.Person GetPerson();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetPerson", ReplyAction="http://tempuri.org/IPeopleService/GetPersonResponse")]
-        System.Threading.Tasks.Task<Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person> GetPersonAsync();
+        System.Threading.Tasks.Task<Apollo.DIOnRamp.Module1.Shared.Model.Person> GetPersonAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/AddPerson", ReplyAction="http://tempuri.org/IPeopleService/AddPersonResponse")]
         void AddPerson();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/AddPerson", ReplyAction="http://tempuri.org/IPeopleService/AddPersonResponse")]
         System.Threading.Tasks.Task AddPersonAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/UpdatePerson", ReplyAction="http://tempuri.org/IPeopleService/UpdatePersonResponse")]
-        void UpdatePerson(string lastName, Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person updatedPerson);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/UpdatePerson", ReplyAction="http://tempuri.org/IPeopleService/UpdatePersonResponse")]
-        System.Threading.Tasks.Task UpdatePersonAsync(string lastName, Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person updatedPerson);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/DeletePerson", ReplyAction="http://tempuri.org/IPeopleService/DeletePersonResponse")]
         void DeletePerson(string lastName, string firstName);
@@ -152,19 +67,19 @@ namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public System.Collections.Generic.List<Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person> GetPeople() {
+        public System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Model.Person> GetPeople() {
             return base.Channel.GetPeople();
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.List<Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person>> GetPeopleAsync() {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Model.Person>> GetPeopleAsync() {
             return base.Channel.GetPeopleAsync();
         }
         
-        public Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person GetPerson() {
+        public Apollo.DIOnRamp.Module1.Shared.Model.Person GetPerson() {
             return base.Channel.GetPerson();
         }
         
-        public System.Threading.Tasks.Task<Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person> GetPersonAsync() {
+        public System.Threading.Tasks.Task<Apollo.DIOnRamp.Module1.Shared.Model.Person> GetPersonAsync() {
             return base.Channel.GetPersonAsync();
         }
         
@@ -174,14 +89,6 @@ namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1 {
         
         public System.Threading.Tasks.Task AddPersonAsync() {
             return base.Channel.AddPersonAsync();
-        }
-        
-        public void UpdatePerson(string lastName, Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person updatedPerson) {
-            base.Channel.UpdatePerson(lastName, updatedPerson);
-        }
-        
-        public System.Threading.Tasks.Task UpdatePersonAsync(string lastName, Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1.Person updatedPerson) {
-            return base.Channel.UpdatePersonAsync(lastName, updatedPerson);
         }
         
         public void DeletePerson(string lastName, string firstName) {

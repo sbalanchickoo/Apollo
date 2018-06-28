@@ -4,7 +4,7 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:52494/ServiceRepo.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:52494/ServiceRepo.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://localhost:52494/ServiceRepo.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Apollo.DIOnRamp.Module1.People.SVC.Model" />
+      <xsd:import schemaLocation="http://localhost:52494/ServiceRepo.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Apollo.DIOnRamp.Module1.Shared.Model" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IPeopleService_GetPeople_InputMessage">
@@ -25,12 +25,6 @@
   <wsdl:message name="IPeopleService_AddPerson_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddPersonResponse" />
   </wsdl:message>
-  <wsdl:message name="IPeopleService_UpdatePerson_InputMessage">
-    <wsdl:part name="parameters" element="tns:UpdatePerson" />
-  </wsdl:message>
-  <wsdl:message name="IPeopleService_UpdatePerson_OutputMessage">
-    <wsdl:part name="parameters" element="tns:UpdatePersonResponse" />
-  </wsdl:message>
   <wsdl:message name="IPeopleService_DeletePerson_InputMessage">
     <wsdl:part name="parameters" element="tns:DeletePerson" />
   </wsdl:message>
@@ -49,10 +43,6 @@
     <wsdl:operation name="AddPerson">
       <wsdl:input wsaw:Action="http://tempuri.org/IPeopleService/AddPerson" message="tns:IPeopleService_AddPerson_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IPeopleService/AddPersonResponse" message="tns:IPeopleService_AddPerson_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="UpdatePerson">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPeopleService/UpdatePerson" message="tns:IPeopleService_UpdatePerson_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPeopleService/UpdatePersonResponse" message="tns:IPeopleService_UpdatePerson_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="DeletePerson">
       <wsdl:input wsaw:Action="http://tempuri.org/IPeopleService/DeletePerson" message="tns:IPeopleService_DeletePerson_InputMessage" />
@@ -81,15 +71,6 @@
     </wsdl:operation>
     <wsdl:operation name="AddPerson">
       <soap:operation soapAction="http://tempuri.org/IPeopleService/AddPerson" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="UpdatePerson">
-      <soap:operation soapAction="http://tempuri.org/IPeopleService/UpdatePerson" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
