@@ -1,7 +1,7 @@
-﻿using Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Model;
+﻿using Apollo.DIOnRamp.Module1.Shared.Model;
 using System.Collections.Generic;
 
-namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Interface
+namespace Apollo.DIOnRamp.Module1.Shared.Interface
 {
     public interface IPersonRepository
     {
@@ -10,8 +10,6 @@ namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Interface
         Person GetPerson();
 
         void AddPerson();
-
-        void UpdatePerson(string lastName, Person updatedPerson);
 
         void DeletePerson(string lastName, string firstName);
     }

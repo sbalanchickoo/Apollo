@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Apollo.CSInterfaces.Module4.PeopleViewer.WPF.Properties {
+namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Apollo.CSInterfaces.Module4.PeopleViewer.WPF.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Apollo.CSInterfaces.Module4.PeopleViewer.WPF.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

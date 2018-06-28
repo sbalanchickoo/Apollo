@@ -1,5 +1,5 @@
 ﻿using Apollo.DIOnRamp.Module1.People.SVC.Interface;
-using Apollo.DIOnRamp.Module1.People.SVC.Model;
+using Apollo.DIOnRamp.Module1.Shared.Model;
 using System;
 using System.Collections.Generic;
 
@@ -7,9 +7,9 @@ namespace Apollo.DIOnRamp.Module1.People.SVC
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class ServiceRepo2 : IPeopleService
+    public class ServiceRepo : IPeopleService
     {
-        public List<Person> GetPeople()
+        public IEnumerable<Person> GetPeople()
         {
             var People = new List<Person>
             {
@@ -25,11 +25,6 @@ namespace Apollo.DIOnRamp.Module1.People.SVC
         }
 
         public void AddPerson()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdatePerson(string lastName, Person updatedPerson)
         {
             throw new NotImplementedException();
         }

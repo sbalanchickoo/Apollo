@@ -1,4 +1,4 @@
-﻿using Apollo.DIOnRamp.Module1.People.SVC.Model;
+﻿using Apollo.DIOnRamp.Module1.Shared.Model;
 using System.Collections.Generic;
 using System.ServiceModel;
 
@@ -9,16 +9,13 @@ namespace Apollo.DIOnRamp.Module1.People.SVC.Interface
     public interface IPeopleService
     {
         [OperationContract]
-        List<Person> GetPeople();
+        IEnumerable<Person> GetPeople();
 
         [OperationContract]
         Person GetPerson();
 
         [OperationContract]
         void AddPerson();
-
-        [OperationContract]
-        void UpdatePerson(string lastName, Person updatedPerson);
 
         [OperationContract]
         void DeletePerson(string lastName, string firstName);

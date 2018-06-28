@@ -1,4 +1,4 @@
-﻿namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Model
+﻿namespace Apollo.DIOnRamp.Module1.Shared.Model
 {
     public class Person
     {

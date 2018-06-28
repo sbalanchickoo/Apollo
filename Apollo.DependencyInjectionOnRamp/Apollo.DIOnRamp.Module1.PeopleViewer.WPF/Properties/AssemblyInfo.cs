@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Apollo.PeopleViewer.WPF")]
+[assembly: AssemblyTitle("Apollo.DIOnRamp.Module1.PeopleViewer.WPF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Apollo.PeopleViewer.WPF")]
+[assembly: AssemblyProduct("Apollo.DIOnRamp.Module1.PeopleViewer.WPF")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

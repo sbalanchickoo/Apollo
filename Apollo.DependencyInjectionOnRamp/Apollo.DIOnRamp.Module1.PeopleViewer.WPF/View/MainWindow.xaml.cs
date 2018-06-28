@@ -1,5 +1,5 @@
-﻿using Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Interface;
-using Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Shared;
+﻿using Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Model;
+using Apollo.DIOnRamp.Module1.Shared.Interface;
 using System.Windows;
 
 namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.View
