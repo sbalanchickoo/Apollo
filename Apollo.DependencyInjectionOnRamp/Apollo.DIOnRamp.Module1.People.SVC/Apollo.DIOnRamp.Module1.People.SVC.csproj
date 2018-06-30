@@ -68,7 +68,7 @@
     <Compile Include="ServiceRepo.svc.cs">
       <DependentUpon>ServiceRepo.svc</DependentUpon>
     </Compile>
-    <Compile Include="Interface\IPeopleService.cs" />
+    <Compile Include="Interfaces\IPeopleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

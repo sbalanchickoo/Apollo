@@ -1,10 +1,10 @@
 ﻿using Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1;
-using Apollo.DIOnRamp.Module1.Shared.Interface;
-using Apollo.DIOnRamp.Module1.Shared.Model;
+using Apollo.DIOnRamp.Module1.Shared.Interfaces;
+using Apollo.DIOnRamp.Module1.Shared.Models;
 using System;
 using System.Collections.Generic;
 
-namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Model
+namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Models
 {
     public class ServiceRepo : IPersonRepository
     {

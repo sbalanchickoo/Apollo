@@ -1,4 +1,4 @@
-﻿namespace Apollo.DIOnRamp.Module1.Shared.Model
+﻿namespace Apollo.DIOnRamp.Module1.Shared.Models
 {
     public class Person
     {

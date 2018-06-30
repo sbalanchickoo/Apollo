@@ -1,5 +1,5 @@
-﻿using Apollo.DIOnRamp.Module1.People.SVC.Interface;
-using Apollo.DIOnRamp.Module1.Shared.Model;
+﻿using Apollo.DIOnRamp.Module1.People.SVC.Interfaces;
+using Apollo.DIOnRamp.Module1.Shared.Models;
 using System;
 using System.Collections.Generic;
 

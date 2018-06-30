@@ -16,16 +16,16 @@ namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1 {
     public interface IPeopleService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetPeople", ReplyAction="http://tempuri.org/IPeopleService/GetPeopleResponse")]
-        System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Model.Person> GetPeople();
+        System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Models.Person> GetPeople();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetPeople", ReplyAction="http://tempuri.org/IPeopleService/GetPeopleResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Model.Person>> GetPeopleAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Models.Person>> GetPeopleAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetPerson", ReplyAction="http://tempuri.org/IPeopleService/GetPersonResponse")]
-        Apollo.DIOnRamp.Module1.Shared.Model.Person GetPerson();
+        Apollo.DIOnRamp.Module1.Shared.Models.Person GetPerson();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/GetPerson", ReplyAction="http://tempuri.org/IPeopleService/GetPersonResponse")]
-        System.Threading.Tasks.Task<Apollo.DIOnRamp.Module1.Shared.Model.Person> GetPersonAsync();
+        System.Threading.Tasks.Task<Apollo.DIOnRamp.Module1.Shared.Models.Person> GetPersonAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPeopleService/AddPerson", ReplyAction="http://tempuri.org/IPeopleService/AddPersonResponse")]
         void AddPerson();
@@ -67,19 +67,19 @@ namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Model.Person> GetPeople() {
+        public System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Models.Person> GetPeople() {
             return base.Channel.GetPeople();
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Model.Person>> GetPeopleAsync() {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<Apollo.DIOnRamp.Module1.Shared.Models.Person>> GetPeopleAsync() {
             return base.Channel.GetPeopleAsync();
         }
         
-        public Apollo.DIOnRamp.Module1.Shared.Model.Person GetPerson() {
+        public Apollo.DIOnRamp.Module1.Shared.Models.Person GetPerson() {
             return base.Channel.GetPerson();
         }
         
-        public System.Threading.Tasks.Task<Apollo.DIOnRamp.Module1.Shared.Model.Person> GetPersonAsync() {
+        public System.Threading.Tasks.Task<Apollo.DIOnRamp.Module1.Shared.Models.Person> GetPersonAsync() {
             return base.Channel.GetPersonAsync();
         }
         

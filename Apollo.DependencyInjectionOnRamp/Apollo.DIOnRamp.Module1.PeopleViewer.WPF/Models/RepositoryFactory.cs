@@ -1,8 +1,8 @@
-﻿using Apollo.DIOnRamp.Module1.Shared.Interface;
+﻿using Apollo.DIOnRamp.Module1.Shared.Interfaces;
 using System;
 using System.Configuration;
 
-namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Model
+namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Models
 {
     public static class RepositoryFactory
     {
