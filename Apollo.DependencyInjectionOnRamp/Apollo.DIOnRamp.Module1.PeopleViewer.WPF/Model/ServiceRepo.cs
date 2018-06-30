@@ -25,7 +25,7 @@ namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Model
             return peopleService.GetPeople();
         }
 
-        public Shared.Model.Person GetPerson()
+        public Person GetPerson()
         {
             throw new NotImplementedException();
         }
