@@ -9,10 +9,10 @@ namespace Apollo.DIOnRamp.Module2.PeopleViewer.WPF.Views
     public partial class MainWindow : Window
     {
         
-        public MainWindow()
+        public MainWindow(PeopleViewModel viewModel)
         {
             InitializeComponent();
-            //DataContext = new PeopleViewModel();
+            DataContext = viewModel;
         }
     }
 }
