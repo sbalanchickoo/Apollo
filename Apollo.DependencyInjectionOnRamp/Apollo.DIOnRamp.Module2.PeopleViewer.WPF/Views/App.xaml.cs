@@ -1,6 +1,6 @@
 ﻿using Apollo.DIOnRamp.Module2.PeopleViewer.WPF.ViewModels;
 using System.Windows;
-using Apollo.DIOnRamp.Module2.Shared.Interfaces;
+using Apollo.DIOnRamp.Module2.PeopleViewer.WPF.Models;
 
 namespace Apollo.DIOnRamp.Module2.PeopleViewer.WPF.Views
 {
@@ -12,9 +12,11 @@ namespace Apollo.DIOnRamp.Module2.PeopleViewer.WPF.Views
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            var viewModel = new PeopleViewModel();
-            Application.Current.MainWindow = new PeopleViewer(viewModel);
+            var repo = RepositoryFactory.GetRepository();
+            var viewModel = new PeopleViewModel(repo);
+            Application.Current.MainWindow = new PeopleViewerWindow(viewModel);
             Application.Current.MainWindow.Show();
+            Application.Current.MainWindow.Title = "Loose Coupling - People Viewer";
         }
     }
 }

@@ -64,7 +64,7 @@
     </Compile>
     <Compile Include="Models\ServiceRepo.cs" />
     <Compile Include="Models\RepositoryFactory.cs" />
-    <Page Include="Views\MainWindow.xaml">
+    <Page Include="Views\PeopleViewerWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -73,8 +73,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ViewModels\PeopleViewModel.cs" />
-    <Compile Include="Views\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Views\PeopleViewerWindow.xaml.cs">
+      <DependentUpon>PeopleViewerWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

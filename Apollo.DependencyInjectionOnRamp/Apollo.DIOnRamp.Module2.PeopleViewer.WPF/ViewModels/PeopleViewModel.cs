@@ -1,5 +1,4 @@
-﻿using Apollo.DIOnRamp.Module2.PeopleViewer.WPF.Models;
-using Apollo.DIOnRamp.Module2.Shared.Interfaces;
+﻿using Apollo.DIOnRamp.Module2.Shared.Interfaces;
 using Apollo.DIOnRamp.Module2.Shared.Models;
 using System;
 using System.Collections.Generic;
