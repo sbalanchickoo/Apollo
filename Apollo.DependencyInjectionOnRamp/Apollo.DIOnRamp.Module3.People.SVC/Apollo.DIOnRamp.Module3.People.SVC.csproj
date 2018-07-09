@@ -6,12 +6,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3E4D8C08-988F-4786-B8AD-752C2171C7D3}</ProjectGuid>
+    <ProjectGuid>{107B3A9C-E7A5-4642-9124-088A0DBEE153}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Apollo.DIOnRamp.Module2.People.SVC</RootNamespace>
-    <AssemblyName>Apollo.DIOnRamp.Module2.People.SVC</AssemblyName>
+    <RootNamespace>Apollo.DIOnRamp.Module3.People.SVC</RootNamespace>
+    <AssemblyName>Apollo.DIOnRamp.Module3.People.SVC</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -27,7 +27,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -35,7 +35,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -61,15 +61,15 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ServiceRepo2.svc" />
+    <Content Include="ServiceRepo3.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ServiceRepo2.svc.cs">
-      <DependentUpon>ServiceRepo2.svc</DependentUpon>
-    </Compile>
     <Compile Include="Interfaces\IPeopleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceRepo3.svc.cs">
+      <DependentUpon>ServiceRepo3.svc</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -83,9 +83,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Apollo.DIOnRamp.Module2.Shared\Apollo.DIOnRamp.Module2.Shared.csproj">
-      <Project>{89612db1-5aef-40f6-91ff-2293c1b6a9bf}</Project>
-      <Name>Apollo.DIOnRamp.Module2.Shared</Name>
+    <ProjectReference Include="..\Apollo.DIOnRamp.Module3.Shared\Apollo.DIOnRamp.Module3.Shared.csproj">
+      <Project>{af7ddf46-3b65-4589-ae57-44b69c061557}</Project>
+      <Name>Apollo.DIOnRamp.Module3.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
