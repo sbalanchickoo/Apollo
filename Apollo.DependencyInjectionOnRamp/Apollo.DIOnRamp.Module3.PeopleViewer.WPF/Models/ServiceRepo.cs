@@ -1,4 +1,4 @@
-﻿using Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ServiceReference1;
+﻿using Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ServiceReference3;
 using Apollo.DIOnRamp.Module3.Shared.Interfaces;
 using Apollo.DIOnRamp.Module3.Shared.Models;
 using System;
