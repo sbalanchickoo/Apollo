@@ -107,6 +107,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Apollo.DIOnRamp.Module1.People.SVC\Apollo.DIOnRamp.Module1.People.SVC.csproj">
+      <Project>{c082b060-60d0-4050-8133-66d449cf9ec4}</Project>
+      <Name>Apollo.DIOnRamp.Module1.People.SVC</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Apollo.DIOnRamp.Module1.Shared\Apollo.DIOnRamp.Module1.Shared.csproj">
       <Project>{1cbd4d86-4235-47c1-b5cb-19cc04c6adb3}</Project>
       <Name>Apollo.DIOnRamp.Module1.Shared</Name>

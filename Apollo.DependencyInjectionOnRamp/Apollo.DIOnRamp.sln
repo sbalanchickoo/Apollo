@@ -41,12 +41,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Module2.Shared", "Apollo.DIOnRamp.Module2.Shared\Apollo.DIOnRamp.Module2.Shared.csproj", "{89612DB1-5AEF-40F6-91FF-2293C1B6A9BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Module2.PeopleViewer.WPF", "Apollo.DIOnRamp.Module2.PeopleViewer.WPF\Apollo.DIOnRamp.Module2.PeopleViewer.WPF.csproj", "{E53E7A43-2608-460D-AE86-312DAF587C3C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3E4D8C08-988F-4786-B8AD-752C2171C7D3} = {3E4D8C08-988F-4786-B8AD-752C2171C7D3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Module1.PeopleViewer.WPF", "Apollo.DIOnRamp.Module1.PeopleViewer.WPF\Apollo.DIOnRamp.Module1.PeopleViewer.WPF.csproj", "{87401C06-8EDC-4E49-ACDE-5D774D7E2D84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Module1.People.SVC", "Apollo.DIOnRamp.Module1.People.SVC\Apollo.DIOnRamp.Module1.People.SVC.csproj", "{87296137-11FD-4F3A-A33C-32BE730B743C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Module1.Shared", "Apollo.DIOnRamp.Module1.Shared\Apollo.DIOnRamp.Module1.Shared.csproj", "{1CBD4D86-4235-47C1-B5CB-19CC04C6ADB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Module1.People.SVC", "Apollo.DIOnRamp.Module1.People.SVC\Apollo.DIOnRamp.Module1.People.SVC.csproj", "{C082B060-60D0-4050-8133-66D449CF9EC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,14 +85,14 @@ Global
 		{87401C06-8EDC-4E49-ACDE-5D774D7E2D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87401C06-8EDC-4E49-ACDE-5D774D7E2D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87401C06-8EDC-4E49-ACDE-5D774D7E2D84}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87296137-11FD-4F3A-A33C-32BE730B743C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87296137-11FD-4F3A-A33C-32BE730B743C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87296137-11FD-4F3A-A33C-32BE730B743C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87296137-11FD-4F3A-A33C-32BE730B743C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1CBD4D86-4235-47C1-B5CB-19CC04C6ADB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1CBD4D86-4235-47C1-B5CB-19CC04C6ADB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CBD4D86-4235-47C1-B5CB-19CC04C6ADB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CBD4D86-4235-47C1-B5CB-19CC04C6ADB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C082B060-60D0-4050-8133-66D449CF9EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C082B060-60D0-4050-8133-66D449CF9EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C082B060-60D0-4050-8133-66D449CF9EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C082B060-60D0-4050-8133-66D449CF9EC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,8 +114,8 @@ Global
 		{89612DB1-5AEF-40F6-91FF-2293C1B6A9BF} = {5D6AAC1F-5E7A-4613-B9AF-BF666ECAC4F4}
 		{E53E7A43-2608-460D-AE86-312DAF587C3C} = {01813A5C-F37D-4FD4-A9B4-2636628B0412}
 		{87401C06-8EDC-4E49-ACDE-5D774D7E2D84} = {80E30EF4-1632-42A4-8446-50CF10FF0566}
-		{87296137-11FD-4F3A-A33C-32BE730B743C} = {054EDC9B-C960-492D-B477-0D77851D4929}
 		{1CBD4D86-4235-47C1-B5CB-19CC04C6ADB3} = {61CD96FB-1CCC-4F9A-BE3B-86AE65F17AB6}
+		{C082B060-60D0-4050-8133-66D449CF9EC4} = {054EDC9B-C960-492D-B477-0D77851D4929}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0B2DACF-D9B4-4358-AEC2-CCBC55A8C1C8}

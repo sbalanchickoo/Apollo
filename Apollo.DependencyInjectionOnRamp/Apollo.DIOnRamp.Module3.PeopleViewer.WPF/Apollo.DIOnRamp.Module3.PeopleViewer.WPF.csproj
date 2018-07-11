@@ -57,6 +57,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Connected Services\ServiceReference3\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Models\ServiceRepo.cs" />
     <Compile Include="Models\RepositoryFactory.cs" />
     <Page Include="Views\PeopleViewerWindow.xaml">
@@ -91,6 +96,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Connected Services\ServiceReference3\ServiceRepo3.wsdl" />
+    <None Include="Connected Services\ServiceReference3\ServiceRepo3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference3\ServiceRepo31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference3\ServiceRepo32.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\DataSources\Apollo.DIOnRamp.Module1.Shared.Model.Person.datasource" />
     <None Include="Properties\DataSources\Apollo.DIOnRamp.Module1.Shared.Models.Person.datasource" />
     <None Include="Properties\DataSources\Apollo.DIOnRamp.Module2.Shared.Models.Person.datasource" />
@@ -112,6 +127,24 @@
       <Project>{af7ddf46-3b65-4589-ae57-44b69c061557}</Project>
       <Name>Apollo.DIOnRamp.Module3.Shared</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference3\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference3\ServiceRepo3.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference3\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference3\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference3\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

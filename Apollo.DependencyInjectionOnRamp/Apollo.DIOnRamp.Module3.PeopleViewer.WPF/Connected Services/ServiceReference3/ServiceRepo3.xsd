@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:52495/ServiceRepo2.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Apollo.DIOnRamp.Module2.Shared.Models" />
+  <xs:import schemaLocation="http://localhost:52496/ServiceRepo3.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Apollo.DIOnRamp.Module3.Shared.Models" />
   <xs:element name="GetPeople">
     <xs:complexType>
       <xs:sequence />
@@ -9,7 +9,7 @@
   <xs:element name="GetPeopleResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Apollo.DIOnRamp.Module2.Shared.Models" minOccurs="0" name="GetPeopleResult" nillable="true" type="q1:ArrayOfPerson" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Apollo.DIOnRamp.Module3.Shared.Models" minOccurs="0" name="GetPeopleResult" nillable="true" type="q1:ArrayOfPerson" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -21,7 +21,7 @@
   <xs:element name="GetPersonResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Apollo.DIOnRamp.Module2.Shared.Models" minOccurs="0" name="GetPersonResult" nillable="true" type="q2:Person" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Apollo.DIOnRamp.Module3.Shared.Models" minOccurs="0" name="GetPersonResult" nillable="true" type="q2:Person" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

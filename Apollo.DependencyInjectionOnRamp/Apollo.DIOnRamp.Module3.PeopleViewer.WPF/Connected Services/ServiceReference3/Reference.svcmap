@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a8339e8c-b034-4aec-bdf7-d7b6eefe41cf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52496/ServiceRepo3.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceRepo3.xsd" MetadataType="Schema" ID="7cd46f7e-e858-4e7f-b218-2e80b3195b35" SourceId="1" SourceUrl="http://localhost:52496/ServiceRepo3.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceRepo31.xsd" MetadataType="Schema" ID="9e0c030a-d03c-4a88-82bc-5dadf079fdb9" SourceId="1" SourceUrl="http://localhost:52496/ServiceRepo3.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceRepo3.wsdl" MetadataType="Wsdl" ID="b09fcc5b-c7b5-49dd-a3f9-7c64a6726696" SourceId="1" SourceUrl="http://localhost:52496/ServiceRepo3.svc?wsdl" />
+    <MetadataFile FileName="ServiceRepo32.xsd" MetadataType="Schema" ID="0c415f57-bc0d-4dd8-9675-736b02dfef13" SourceId="1" SourceUrl="http://localhost:52496/ServiceRepo3.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceRepo3.disco" MetadataType="Disco" ID="553b588a-54d4-4430-9a84-9a490575f58d" SourceId="1" SourceUrl="http://localhost:52496/ServiceRepo3.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
