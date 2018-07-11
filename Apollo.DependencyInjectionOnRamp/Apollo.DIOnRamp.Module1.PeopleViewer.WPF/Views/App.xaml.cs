@@ -7,5 +7,6 @@ namespace Apollo.DIOnRamp.Module1.PeopleViewer.WPF.Views
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }
