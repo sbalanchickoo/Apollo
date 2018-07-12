@@ -1,9 +1,9 @@
-﻿using Apollo.DIOnRamp.Module1.People.SVC.Interfaces;
-using Apollo.DIOnRamp.Module1.Shared.Models;
+﻿using Apollo.DIOnRamp.People.SVC.Interfaces;
+using Apollo.DIOnRamp.Shared.Models;
 using System;
 using System.Collections.Generic;
 
-namespace Apollo.DIOnRamp.Module1.People.SVC
+namespace Apollo.DIOnRamp.Module2.People.SVC
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.

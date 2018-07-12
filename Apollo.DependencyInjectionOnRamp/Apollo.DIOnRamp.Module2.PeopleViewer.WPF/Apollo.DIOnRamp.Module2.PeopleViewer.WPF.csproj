@@ -123,12 +123,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Apollo.DIOnRamp.Module2.Shared\Apollo.DIOnRamp.Module2.Shared.csproj">
-      <Project>{89612db1-5aef-40f6-91ff-2293c1b6a9bf}</Project>
-      <Name>Apollo.DIOnRamp.Module2.Shared</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReference2\" />
   </ItemGroup>
   <ItemGroup>

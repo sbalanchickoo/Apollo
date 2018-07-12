@@ -57,11 +57,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Connected Services\ServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Models\ServiceRepo.cs" />
     <Compile Include="Models\RepositoryFactory.cs" />
     <Page Include="Views\MainWindow.xaml">
@@ -96,16 +91,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\ServiceReference\ServiceRepo.wsdl" />
-    <None Include="Connected Services\ServiceReference\ServiceRepo.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceReference\ServiceRepo1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceReference\ServiceRepo2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Properties\DataSources\Apollo.DIOnRamp.Module1.Shared.Model.Person.datasource" />
     <None Include="Properties\DataSources\Apollo.DIOnRamp.Module1.Shared.Models.Person.datasource" />
     <None Include="Properties\Settings.settings">
@@ -122,32 +107,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Apollo.DIOnRamp.Module1.People.SVC\Apollo.DIOnRamp.Module1.People.SVC.csproj">
-      <Project>{c082b060-60d0-4050-8133-66d449cf9ec4}</Project>
-      <Name>Apollo.DIOnRamp.Module1.People.SVC</Name>
+    <ProjectReference Include="..\Apollo.DIOnRamp.Shared\Apollo.DIOnRamp.CommonShared.csproj">
+      <Project>{70ed20b9-82a2-48ff-9abf-0a8e39bc86fa}</Project>
+      <Name>Apollo.DIOnRamp.CommonShared</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Apollo.DIOnRamp.Module1.Shared\Apollo.DIOnRamp.Module1.Shared.csproj">
-      <Project>{1cbd4d86-4235-47c1-b5cb-19cc04c6adb3}</Project>
-      <Name>Apollo.DIOnRamp.Module1.Shared</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceReference\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference\ServiceRepo.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

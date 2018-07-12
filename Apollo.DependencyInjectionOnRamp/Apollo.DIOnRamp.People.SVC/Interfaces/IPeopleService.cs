@@ -1,8 +1,8 @@
-﻿using Apollo.DIOnRamp.Module1.Shared.Models;
+﻿using Apollo.DIOnRamp.Shared.Models;
 using System.Collections.Generic;
 using System.ServiceModel;
 
-namespace Apollo.DIOnRamp.Module1.People.SVC.Interfaces
+namespace Apollo.DIOnRamp.People.SVC.Interfaces
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]

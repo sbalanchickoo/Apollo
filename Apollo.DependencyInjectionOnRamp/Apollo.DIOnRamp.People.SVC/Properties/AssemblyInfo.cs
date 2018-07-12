@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Apollo.DIOnRamp.Module1.People.SVC")]
+[assembly: AssemblyTitle("Apollo.DIOnRamp.People.SVC")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Apollo.DIOnRamp.Module1.People.SVC")]
+[assembly: AssemblyProduct("Apollo.DIOnRamp.People.SVC")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("feb41959-284b-4faf-b283-65842ee99475")]
+[assembly: Guid("d69de05f-e158-43cd-9d29-4a576e686f37")]
 
 // Version information for an assembly consists of the following four values:
 //

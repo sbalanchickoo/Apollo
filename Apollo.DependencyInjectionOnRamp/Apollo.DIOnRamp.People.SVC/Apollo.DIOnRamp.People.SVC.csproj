@@ -6,12 +6,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C082B060-60D0-4050-8133-66D449CF9EC4}</ProjectGuid>
+    <ProjectGuid>{D69DE05F-E158-43CD-9D29-4A576E686F37}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Apollo.DIOnRamp.Module1.People.SVC</RootNamespace>
-    <AssemblyName>Apollo.DIOnRamp.Module1.People.SVC</AssemblyName>
+    <RootNamespace>Apollo.DIOnRamp.People.SVC</RootNamespace>
+    <AssemblyName>Apollo.DIOnRamp.People.SVC</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,7 +35,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -65,10 +65,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IPeopleService.cs" />
     <Compile Include="ServiceRepo.svc.cs">
       <DependentUpon>ServiceRepo.svc</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IPeopleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,9 +83,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Apollo.DIOnRamp.Module1.Shared\Apollo.DIOnRamp.Module1.Shared.csproj">
-      <Project>{1cbd4d86-4235-47c1-b5cb-19cc04c6adb3}</Project>
-      <Name>Apollo.DIOnRamp.Module1.Shared</Name>
+    <ProjectReference Include="..\Apollo.DIOnRamp.Shared\Apollo.DIOnRamp.Shared.csproj">
+      <Project>{70ed20b9-82a2-48ff-9abf-0a8e39bc86fa}</Project>
+      <Name>Apollo.DIOnRamp.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
@@ -101,9 +101,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>52494</DevelopmentServerPort>
+          <DevelopmentServerPort>49814</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52494/</IISUrl>
+          <IISUrl>http://localhost:49814/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

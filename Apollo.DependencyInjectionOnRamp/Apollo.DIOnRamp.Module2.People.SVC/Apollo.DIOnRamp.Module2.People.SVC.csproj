@@ -82,12 +82,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Apollo.DIOnRamp.Module2.Shared\Apollo.DIOnRamp.Module2.Shared.csproj">
-      <Project>{89612db1-5aef-40f6-91ff-2293c1b6a9bf}</Project>
-      <Name>Apollo.DIOnRamp.Module2.Shared</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
