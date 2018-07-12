@@ -1,7 +1,7 @@
 ﻿using Apollo.DIOnRamp.Shared.Models;
 using System.Collections.Generic;
 
-namespace Apollo.DIOnRamp.Module2.Shared.Interfaces
+namespace Apollo.DIOnRamp.Shared.Interfaces
 {
     public interface IPersonRepository
     {

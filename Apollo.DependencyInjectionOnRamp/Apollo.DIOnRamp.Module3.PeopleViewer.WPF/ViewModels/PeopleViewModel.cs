@@ -1,5 +1,5 @@
-﻿using Apollo.DIOnRamp.Module3.Shared.Interfaces;
-using Apollo.DIOnRamp.Module3.Shared.Models;
+﻿using Apollo.DIOnRamp.Shared.Interfaces;
+using Apollo.DIOnRamp.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

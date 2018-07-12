@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" 
+    Service="Apollo.DIOnRamp.People.SVC.ServiceRepo" 
+    CodeBehind="ServiceRepo.svc.cs" %>

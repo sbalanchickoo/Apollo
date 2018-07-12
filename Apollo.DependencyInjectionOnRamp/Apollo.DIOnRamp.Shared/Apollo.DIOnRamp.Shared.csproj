@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70ED20B9-82A2-48FF-9ABF-0A8E39BC86FA}</ProjectGuid>
+    <ProjectGuid>{C06027C6-0AD9-42A2-9EF5-344F022479BC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Apollo.DIOnRamp.Shared</RootNamespace>

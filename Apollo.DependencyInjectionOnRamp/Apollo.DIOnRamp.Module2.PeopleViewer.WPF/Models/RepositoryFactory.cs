@@ -1,4 +1,4 @@
-﻿using Apollo.DIOnRamp.Module2.Shared.Interfaces;
+﻿using Apollo.DIOnRamp.Shared.Interfaces;
 using System;
 using System.Configuration;
 

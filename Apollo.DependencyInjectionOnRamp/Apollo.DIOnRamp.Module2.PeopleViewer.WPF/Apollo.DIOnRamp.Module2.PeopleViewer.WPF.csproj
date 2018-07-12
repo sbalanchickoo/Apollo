@@ -57,7 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Connected Services\ServiceReference2\Reference.cs">
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -96,19 +96,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\ServiceReference2\ServiceRepo2.wsdl" />
-    <None Include="Connected Services\ServiceReference2\ServiceRepo2.xsd">
+    <None Include="Connected Services\ServiceReference1\ServiceRepo.wsdl" />
+    <None Include="Connected Services\ServiceReference1\ServiceRepo.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference2\ServiceRepo21.xsd">
+    <None Include="Connected Services\ServiceReference1\ServiceRepo1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference2\ServiceRepo22.xsd">
+    <None Include="Connected Services\ServiceReference1\ServiceRepo2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Properties\DataSources\Apollo.DIOnRamp.Module1.Shared.Model.Person.datasource" />
-    <None Include="Properties\DataSources\Apollo.DIOnRamp.Module1.Shared.Models.Person.datasource" />
-    <None Include="Properties\DataSources\Apollo.DIOnRamp.Module2.Shared.Models.Person.datasource" />
+    <None Include="Properties\DataSources\Apollo.DIOnRamp.Shared.Models.Person.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -123,19 +121,25 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceReference2\" />
+    <ProjectReference Include="..\Apollo.DIOnRamp.Shared\Apollo.DIOnRamp.Shared.csproj">
+      <Project>{c06027c6-0ad9-42a2-9ef5-344f022479bc}</Project>
+      <Name>Apollo.DIOnRamp.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference2\ServiceRepo2.disco" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference2\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\ServiceRepo.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference2\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference2\Reference.svcmap">
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
