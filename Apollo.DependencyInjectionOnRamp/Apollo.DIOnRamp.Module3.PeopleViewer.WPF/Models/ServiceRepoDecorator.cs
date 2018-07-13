@@ -7,36 +7,16 @@ namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Models
 {
     public class ServiceRepoDecorator : IPersonRepository
     {
-        private IEnumerable<Person> _peopleCollection;
-        public IEnumerable<Person> PeopleCollection
-        {
-            get
-            {
-                return _peopleCollection;
-            }
-            set
-            {
-                if (true)
-                {
-                    _peopleCollection = value;
-                }
-                else
-                {
-
-                }
-            }
-        }
-
+        public IEnumerable<Person> PeopleCollection { get; set; }
+            
         public IPersonRepository Repository { get; set; }
 
-        private bool _cacheValid;
         private DateTime _cacheTime;
-
-        //PeopleServiceClient peopleService = new PeopleServiceClient();
-
+        
         public void AddPerson()
         {
             Repository.AddPerson();
+            PeopleCollection = null;
         }
 
         public void DeletePerson(string lastName, string firstName)
@@ -46,26 +26,38 @@ namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Models
 
         public IEnumerable<Person> GetPeople()
         {
-            ValidateCache();
-            if (!(_cacheValid) || PeopleCollection == null)
+            if (!(ValidateCache()) || PeopleCollection == null)
             {
-                PeopleCollection = Repository.GetPeople();
-                _cacheTime = DateTime.Now;
+                try
+                {
+                    PeopleCollection = Repository.GetPeople();
+                    _cacheTime = DateTime.Now;
+                }
+                catch
+                {
+                    PeopleCollection = new List<Person>
+                    {
+                        new Person() { FirstName = "Not found", LastName = "Not found", PersonId = -1 }
+                    };
+                }
             }
             return PeopleCollection;
         }
 
-        private void ValidateCache()
+        private bool ValidateCache()
         {
-            if (DateTimeOffset.Now.Second - _cacheTime.Second > 30)
+            bool validity;
+            if ((DateTime.Now - _cacheTime).TotalSeconds > 30)
             {
-                _cacheValid = false;
+                validity = false;
             }
             else
             {
-                _cacheValid = true;
+                validity = true;
             }
+            return validity;
         }
+
         public Person GetPerson()
         {
             throw new NotImplementedException();

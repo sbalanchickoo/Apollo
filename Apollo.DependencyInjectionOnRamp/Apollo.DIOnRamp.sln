@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.People.SVC"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Shared", "Apollo.DIOnRamp.Shared\Apollo.DIOnRamp.Shared.csproj", "{C06027C6-0AD9-42A2-9EF5-344F022479BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Test", "Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Test\Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Test.csproj", "{8E3388F4-C251-47CA-8783-C32BF9783AAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,10 @@ Global
 		{C06027C6-0AD9-42A2-9EF5-344F022479BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C06027C6-0AD9-42A2-9EF5-344F022479BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C06027C6-0AD9-42A2-9EF5-344F022479BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E3388F4-C251-47CA-8783-C32BF9783AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E3388F4-C251-47CA-8783-C32BF9783AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E3388F4-C251-47CA-8783-C32BF9783AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E3388F4-C251-47CA-8783-C32BF9783AAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{87401C06-8EDC-4E49-ACDE-5D774D7E2D84} = {80E30EF4-1632-42A4-8446-50CF10FF0566}
 		{35067EC1-E890-437E-8406-13AD1FC9E197} = {7D2857E4-8952-4778-82E7-A4532666E85B}
 		{C06027C6-0AD9-42A2-9EF5-344F022479BC} = {AA177956-BFF2-4F8E-A1FC-AB5030A41668}
+		{8E3388F4-C251-47CA-8783-C32BF9783AAB} = {0FABA938-E3E7-4814-91D9-6223061665D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0B2DACF-D9B4-4358-AEC2-CCBC55A8C1C8}
