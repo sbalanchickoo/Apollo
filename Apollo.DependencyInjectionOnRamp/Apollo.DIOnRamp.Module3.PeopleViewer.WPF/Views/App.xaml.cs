@@ -20,7 +20,8 @@ namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Views
         private static void ComposeObjects()
         {
             var repo = RepositoryFactory.GetRepository();
-            var viewModel = new PeopleViewModel(repo);
+            var repository = new ServiceRepoDecorator(repo);
+            var viewModel = new PeopleViewModel(repository);
             Application.Current.MainWindow = new PeopleViewerWindow(viewModel);
         }
     }
