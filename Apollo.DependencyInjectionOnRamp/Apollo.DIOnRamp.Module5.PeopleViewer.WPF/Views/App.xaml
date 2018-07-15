@@ -1,0 +1,7 @@
+﻿<Application x:Class="Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Views.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
