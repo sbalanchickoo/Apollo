@@ -2,6 +2,7 @@
 using Apollo.DIOnRamp.Shared.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Apollo.DIOnRamp.People.SVC
 {
@@ -9,19 +10,21 @@ namespace Apollo.DIOnRamp.People.SVC
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class ServiceRepo : IPeopleService
     {
+        private List<Person> _people = new List<Person>()
+        {
+            new Person() { FirstName = "John", LastName = "A", PersonId = 1 },
+            new Person() { FirstName = "Jack", LastName = "B", PersonId = 1 }
+        };
+
         public IEnumerable<Person> GetPeople()
         {
-            var People = new List<Person>
-            {
-                new Person() { FirstName = "John", LastName = "A", PersonId = 1 },
-                new Person() { FirstName = "Jack", LastName = "B", PersonId = 1 }
-            };
-            return People;
+            return _people;
         }
 
-        public Person GetPerson()
+        public Person GetPerson(string lastName)
         {
-            throw new NotImplementedException();
+            Person selPerson = _people.Where(s => s.LastName == lastName).FirstOrDefault();
+            return selPerson;
         }
 
         public void AddPerson()

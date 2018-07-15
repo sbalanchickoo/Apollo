@@ -121,7 +121,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Apollo.DIOnRamp.Shared\Apollo.DIOnRamp.Shared.csproj">
       <Project>{c06027c6-0ad9-42a2-9ef5-344f022479bc}</Project>

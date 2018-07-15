@@ -7,7 +7,7 @@ namespace Apollo.DIOnRamp.Shared.Interfaces
     {
         IEnumerable<Person> GetPeople();
 
-        Person GetPerson();
+        Person GetPerson(string lastName);
 
         void AddPerson();
 

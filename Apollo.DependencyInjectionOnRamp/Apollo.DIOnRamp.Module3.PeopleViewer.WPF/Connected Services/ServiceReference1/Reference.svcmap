@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d0a6a202-eb70-441e-859c-006bf7a839b9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="635fe410-e384-46be-8fc8-4a567bc25666" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -24,11 +24,11 @@
     <MetadataSource Address="http://localhost:49815/ServiceRepo.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceRepo.xsd" MetadataType="Schema" ID="254de4cc-c4db-47a9-924d-546ce98f71d1" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceRepo1.xsd" MetadataType="Schema" ID="92988cf7-a01d-4321-a770-6aba11331e6f" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceRepo.disco" MetadataType="Disco" ID="b6be1852-50fd-4abc-a5c7-afd7fd466b2c" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?disco" />
-    <MetadataFile FileName="ServiceRepo2.xsd" MetadataType="Schema" ID="9120a288-d193-4d7d-9488-2be5e7e46189" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceRepo.wsdl" MetadataType="Wsdl" ID="baf5eb76-e789-4171-a77a-fa7acac0a559" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?wsdl" />
+    <MetadataFile FileName="ServiceRepo.xsd" MetadataType="Schema" ID="b500ae03-408f-46e5-bdbe-d41212f64ed0" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceRepo1.xsd" MetadataType="Schema" ID="5878bd13-d856-464d-be9b-0175166afde1" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceRepo.disco" MetadataType="Disco" ID="9e02b838-0d72-43eb-847d-d1b9ab3a21e7" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?disco" />
+    <MetadataFile FileName="ServiceRepo2.xsd" MetadataType="Schema" ID="fb34bdd7-a8b7-4109-9bef-056f7b52f19d" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceRepo.wsdl" MetadataType="Wsdl" ID="4af568df-a5db-4880-83aa-aa8ed47b928c" SourceId="1" SourceUrl="http://localhost:49815/ServiceRepo.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

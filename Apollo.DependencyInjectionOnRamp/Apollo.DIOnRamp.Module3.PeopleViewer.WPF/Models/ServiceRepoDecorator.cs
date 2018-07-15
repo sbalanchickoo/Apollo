@@ -1,21 +1,25 @@
-﻿using Apollo.DIOnRamp.Shared.Interfaces;
+﻿using Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ServiceReference1;
+using Apollo.DIOnRamp.Shared.Interfaces;
 using Apollo.DIOnRamp.Shared.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Models
 {
     public class ServiceRepoDecorator : IPersonRepository
     {
         public IEnumerable<Person> PeopleCollection { get; set; }
-            
-        public IPersonRepository Repository { get; set; }
 
-        private DateTime _cacheTime;
+        private IPersonRepository _repository;
         
+        private DateTime _cacheTime;
+
+        private bool _cacheValid;
+
         public void AddPerson()
         {
-            Repository.AddPerson();
+            _repository.AddPerson();
             PeopleCollection = null;
         }
 
@@ -30,7 +34,7 @@ namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Models
             {
                 try
                 {
-                    PeopleCollection = Repository.GetPeople();
+                    PeopleCollection = _repository.GetPeople();
                     _cacheTime = DateTime.Now;
                 }
                 catch
@@ -58,14 +62,14 @@ namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Models
             return validity;
         }
 
-        public Person GetPerson()
+        public Person GetPerson(string lastName)
         {
-            throw new NotImplementedException();
+            return _repository.GetPerson(lastName);    
         }
 
         public ServiceRepoDecorator(IPersonRepository repository)
         {
-            Repository = repository;
+            _repository = repository;
         }
     }
 }

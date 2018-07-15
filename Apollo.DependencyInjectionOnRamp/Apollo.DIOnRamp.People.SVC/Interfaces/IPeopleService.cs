@@ -12,7 +12,7 @@ namespace Apollo.DIOnRamp.People.SVC.Interfaces
         IEnumerable<Person> GetPeople();
 
         [OperationContract]
-        Person GetPerson();
+        Person GetPerson(string lastName);
 
         [OperationContract]
         void AddPerson();
