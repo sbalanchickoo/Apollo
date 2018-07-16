@@ -30,9 +30,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Module1.Peo
 		{35067EC1-E890-437E-8406-13AD1FC9E197} = {35067EC1-E890-437E-8406-13AD1FC9E197}
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DIOnRamp.Services", "DIOnRamp.Services", "{7D2857E4-8952-4778-82E7-A4532666E85B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DIOnRamp.Common.Services", "DIOnRamp.Common.Services", "{7D2857E4-8952-4778-82E7-A4532666E85B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DIOnRamp.Shared", "DIOnRamp.Shared", "{AA177956-BFF2-4F8E-A1FC-AB5030A41668}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DIOnRamp.Common.SharedComponents", "DIOnRamp.Common.SharedComponents", "{AA177956-BFF2-4F8E-A1FC-AB5030A41668}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.People.SVC", "Apollo.DIOnRamp.People.SVC\Apollo.DIOnRamp.People.SVC.csproj", "{35067EC1-E890-437E-8406-13AD1FC9E197}"
 EndProject
@@ -40,7 +40,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Shared", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Test", "Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Test\Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Test.csproj", "{8E3388F4-C251-47CA-8783-C32BF9783AAB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DIOnRamp.UnitTests", "DIOnRamp.UnitTests", "{63D202D7-9EE7-4D8B-A0FC-D1DB2F21A127}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DIOnRamp.Common.UnitTests", "DIOnRamp.Common.UnitTests", "{63D202D7-9EE7-4D8B-A0FC-D1DB2F21A127}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DIOnRamp.Module5", "DIOnRamp.Module5", "{9C03CF57-612A-4BF5-98AD-E7E407C507A0}"
 EndProject

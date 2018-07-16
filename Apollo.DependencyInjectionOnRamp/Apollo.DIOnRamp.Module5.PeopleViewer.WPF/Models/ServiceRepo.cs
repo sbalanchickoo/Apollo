@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Models
 {
-    public class ServiceRepo : IPersonRepository, IPersonRepositorySource
+    public class ServiceRepo : IPersonRepositorySource
     {
         //PeopleServiceClient peopleService = new PeopleServiceClient();
 
