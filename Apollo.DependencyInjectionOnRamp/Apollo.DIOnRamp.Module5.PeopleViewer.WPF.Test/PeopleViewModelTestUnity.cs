@@ -5,13 +5,15 @@ using Apollo.DIOnRamp.Shared.Interfaces;
 using Apollo.DIOnRamp.Shared.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using Unity;
 
 namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Test
 {
     [TestClass]
-    public class PeopleViewModelTest
+    public class PeopleViewModelTestUnity
     {
         private IPersonRepository _repository;
+        private UnityContainer Container;
 
         [TestInitialize]
         public void Setup()
@@ -25,14 +27,17 @@ namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Test
 
             var repositoryMock = new Mock<IPersonRepository>();
             repositoryMock.Setup(r => r.GetPeople()).Returns(people);
-            _repository = repositoryMock.Object;
+            Container = new UnityContainer();
+            Container.RegisterInstance<IPersonRepository>(repositoryMock.Object);
+            //_repository = repositoryMock.Object;
         }
 
         [TestMethod]
-        public void People_OnGet_IsPopulated()
+        public void Unity_People_OnGet_IsPopulated()
         {
             //Arrange
-            var viewModel = new PeopleViewModel(_repository);
+            //var viewModel = new PeopleViewModel(_repository);
+            var viewModel = Container.Resolve<PeopleViewModel>();
 
             //Act
             viewModel.RefreshPeopleCommand.Execute(null);

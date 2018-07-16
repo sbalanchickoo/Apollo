@@ -2,11 +2,11 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Test")]
+[assembly: AssemblyTitle("Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Test")]
+[assembly: AssemblyProduct("Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Test")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
