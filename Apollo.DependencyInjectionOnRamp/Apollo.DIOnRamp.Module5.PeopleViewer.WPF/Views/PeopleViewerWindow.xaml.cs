@@ -1,7 +1,7 @@
-﻿using Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ViewModels;
+﻿using Apollo.DIOnRamp.Module5.PeopleViewer.WPF.ViewModels;
 using System.Windows;
 
-namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Views
+namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

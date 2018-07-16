@@ -46,6 +46,6 @@ namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Models
             return PeopleService.GetPeople();
         }
 
-        
+        //servicerepo -> decorator -> viewmodel -> view
     }
 }

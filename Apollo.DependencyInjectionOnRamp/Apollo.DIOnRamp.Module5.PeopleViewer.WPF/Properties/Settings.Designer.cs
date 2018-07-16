@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Properties {
+namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

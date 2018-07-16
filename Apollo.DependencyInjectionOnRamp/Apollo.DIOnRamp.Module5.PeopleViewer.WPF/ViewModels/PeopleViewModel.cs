@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Input;
 
-namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ViewModels
+namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.ViewModels
 {
     public class PeopleViewModel : INotifyPropertyChanged
     {

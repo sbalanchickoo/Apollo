@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        x:Class="Apollo.DIOnRamp.Module3.PeopleViewer.WPF.Views.PeopleViewerWindow"
+        x:Class="Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Views.PeopleViewerWindow"
         mc:Ignorable="d"
         Title="Loose Coupling - People Viewer" Height="450" Width="800">
     <Grid>

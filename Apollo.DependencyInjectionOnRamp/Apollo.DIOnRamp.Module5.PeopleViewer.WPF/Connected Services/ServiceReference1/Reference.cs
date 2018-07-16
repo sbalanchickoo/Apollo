@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ServiceReference1 {
+namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -41,12 +41,12 @@ namespace Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IPeopleServiceChannel : Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ServiceReference1.IPeopleService, System.ServiceModel.IClientChannel {
+    public interface IPeopleServiceChannel : Apollo.DIOnRamp.Module5.PeopleViewer.WPF.ServiceReference1.IPeopleService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class PeopleServiceClient : System.ServiceModel.ClientBase<Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ServiceReference1.IPeopleService>, Apollo.DIOnRamp.Module3.PeopleViewer.WPF.ServiceReference1.IPeopleService {
+    public partial class PeopleServiceClient : System.ServiceModel.ClientBase<Apollo.DIOnRamp.Module5.PeopleViewer.WPF.ServiceReference1.IPeopleService>, Apollo.DIOnRamp.Module5.PeopleViewer.WPF.ServiceReference1.IPeopleService {
         
         public PeopleServiceClient() {
         }
