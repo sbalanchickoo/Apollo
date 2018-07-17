@@ -5,13 +5,16 @@ using System.Linq;
 using Apollo.DIOnRamp.Shared.Models;
 using Apollo.DIOnRamp.Module5.PeopleViewer.WPF.ServiceReference1;
 using Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Models;
+using Unity;
+using Unity.Injection;
 
 namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Test
 {
     [TestClass]
-    public class ServiceRepoTest
+    public class ServiceRepoTestUnity
     {
         IPeopleService _peopleService;
+        UnityContainer Container;
 
         [TestInitialize]
         public void Setup()
@@ -28,18 +31,18 @@ namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Test
 
             peopleServiceMock.Setup(r => r.GetPerson(It.IsAny<string>()))
                 .Returns((string n) => people.FirstOrDefault(p => p.LastName == n));
-            _peopleService = peopleServiceMock.Object;
+            Container = new UnityContainer();
+            Container.RegisterInstance<IPeopleService>(peopleServiceMock.Object);
+            Container.RegisterType<ServiceRepo>(
+                new InjectionProperty("PeopleService"));
         }
 
         [TestMethod]
-        public void GetPeople_OnExecute_ReturnsPeople()
+        public void Unity_GetPeople_OnExecute_ReturnsPeople()
         {
             //Arrange
-            var repo = new ServiceRepo
-            {
-                PeopleService = _peopleService
-            };
-
+            var repo = Container.Resolve<ServiceRepo>();
+            
             //Act
             var output = repo.GetPeople();
 
@@ -49,30 +52,24 @@ namespace Apollo.DIOnRamp.Module5.PeopleViewer.WPF.Test
         }
 
         [TestMethod]
-        public void GetPerson_OnExecuteWithValidValue_ReturnsPerson()
+        public void Unity_GetPerson_OnExecuteWithValidValue_ReturnsPerson()
         {
             // Arrange
-            var repo1 = new ServiceRepo
-            {
-                PeopleService = _peopleService
-            };
+            var repo = Container.Resolve<ServiceRepo>();
 
             // Act
-            var output1 = repo1.GetPerson("Woman");
+            var output = repo.GetPerson("Woman");
 
             // Assert
-            Assert.IsNotNull(output1);
-            Assert.AreEqual("Woman", output1.LastName);
+            Assert.IsNotNull(output);
+            Assert.AreEqual("Woman", output.LastName);
         }
 
         [TestMethod]
-        public void GetPerson_OnExecuteWithInvalidValue_ReturnsPerson()
+        public void Unity_GetPerson_OnExecuteWithInvalidValue_ReturnsPerson()
         {
             // Arrange
-            var repo = new ServiceRepo
-            {
-                PeopleService = _peopleService
-            };
+            var repo = Container.Resolve<ServiceRepo>();
 
             // Act
             var output = repo.GetPerson("NOTAREALPERSON");
