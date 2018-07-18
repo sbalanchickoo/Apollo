@@ -1,11 +1,12 @@
-﻿using Apollo.ASPNet.Module1.Food.Interfaces;
-using Apollo.ASPNet.Module1.Food.Models;
+﻿using Apollo.ASPNetCore.Module2.Greeter.Interfaces;
+using Apollo.ASPNetCore.Module2.Greeter.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
-namespace Apollo.ASPNet.Module1.Food
+namespace Apollo.ASPNetCore.Module2.Greeter
 {
     public class Startup
     {
@@ -13,19 +14,22 @@ namespace Apollo.ASPNet.Module1.Food
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IGreeter, Greeter>();
+            services.AddSingleton<IGreeting, Greeting>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(
             IApplicationBuilder app
             , IHostingEnvironment env
-            , IGreeter greeter)
+            , IGreeting greeter
+            , ILogger<Startup> logger)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            //app.UseWelcomePage("/wp");
 
             app.Run(async (context) =>
             {

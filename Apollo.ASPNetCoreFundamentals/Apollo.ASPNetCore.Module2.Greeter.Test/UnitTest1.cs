@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ASPNetCoreFundamentals.Module1
+namespace Apollo.ASPNetCore.Module2.Greeter.Test
 {
     [TestClass]
     public class UnitTest1

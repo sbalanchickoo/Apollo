@@ -2,18 +2,18 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("ASPNetCoreFundamentals.Module1")]
+[assembly: AssemblyTitle("Apollo.ASPNetCore.Module2.Greeter.Test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ASPNetCoreFundamentals.Module1")]
+[assembly: AssemblyProduct("Apollo.ASPNetCore.Module2.Greeter.Test")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("6af7acca-d07a-4120-868c-00c487627547")]
+[assembly: Guid("c65acb55-493e-41d0-8a17-f7331765dbc7")]
 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]

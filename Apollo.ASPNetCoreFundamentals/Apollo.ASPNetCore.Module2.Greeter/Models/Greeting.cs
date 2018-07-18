@@ -1,13 +1,13 @@
-﻿using Apollo.ASPNet.Module1.Food.Interfaces;
+﻿using Apollo.ASPNetCore.Module2.Greeter.Interfaces;
 using Microsoft.Extensions.Configuration;
 
-namespace Apollo.ASPNet.Module1.Food.Models
+namespace Apollo.ASPNetCore.Module2.Greeter.Models
 {
-    public class Greeter : IGreeter
+    public class Greeting : IGreeting
     {
         private IConfiguration _configuration;
 
-        public Greeter(IConfiguration configuration)
+        public Greeting(IConfiguration configuration)
         {
             _configuration = configuration;
         }
