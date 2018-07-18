@@ -30,7 +30,7 @@ namespace Apollo.ASPNetCore.Module2.Greeter
             }
 
             //app.UseWelcomePage("/wp");
-
+            app.UseStaticFiles();
             app.Run(async (context) =>
             {
                 var greeting = greeter.GetMessage();
