@@ -1,4 +1,4 @@
-﻿namespace Apollo.ASPNetCore.Module2.Greeter.Interfaces
+﻿namespace Apollo.ASPNetCore.Module3.StaticFiles.Interfaces
 {
     public interface IGreeting
     {

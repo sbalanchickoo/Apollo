@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Apollo.ASPNetCore.Module2.Greeter.Food
+namespace Apollo.ASPNetCore.Module3.StaticFiles
 {
     public class Program
     {

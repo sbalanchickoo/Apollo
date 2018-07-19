@@ -1,12 +1,12 @@
-﻿using Apollo.ASPNetCore.Module2.Greeter.Interfaces;
-using Apollo.ASPNetCore.Module2.Greeter.Models;
+﻿using Apollo.ASPNetCore.Module3.StaticFiles.Interfaces;
+using Apollo.ASPNetCore.Module3.StaticFiles.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Apollo.ASPNetCore.Module2.Greeter
+namespace Apollo.ASPNetCore.Module3.StaticFiles
 {
     public class Startup
     {
@@ -29,11 +29,9 @@ namespace Apollo.ASPNetCore.Module2.Greeter
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseWelcomePage("/wp");
-            //app.UseFileServer();
-
-            app.UseDefaultFiles();
-
+            app.UseFileServer();
+            app.UseStaticFiles();
+            
             app.Run(async (context) =>
             {
                 var greeting = greeter.GetMessage();

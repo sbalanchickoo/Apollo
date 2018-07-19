@@ -1,7 +1,7 @@
-﻿using Apollo.ASPNetCore.Module2.Greeter.Interfaces;
+﻿using Apollo.ASPNetCore.Module3.StaticFiles.Interfaces;
 using Microsoft.Extensions.Configuration;
 
-namespace Apollo.ASPNetCore.Module2.Greeter.Models
+namespace Apollo.ASPNetCore.Module3.StaticFiles.Models
 {
     public class Greeting : IGreeting
     {
