@@ -1,4 +1,4 @@
-﻿namespace Apollo.ASPNetCore.Module4.RestaurantReviews.Interfaces
+﻿namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Interfaces
 {
     public interface IGreeting
     {

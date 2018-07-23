@@ -13,7 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module3", "Module3", "{1588
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apollo.ASPNetCore.Module3.StaticFiles", "Apollo.ASPNetCore.Module3.StaticFiles\Apollo.ASPNetCore.Module3.StaticFiles.csproj", "{76616EA4-5CE9-4034-9233-9702605A42EF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apollo.ASPNetCore.Module4.Controllers", "Apollo.ASPNetCore.Module4.Controllers\Apollo.ASPNetCore.Module4.Controllers.csproj", "{5A12AF87-9F9F-4ECE-99CC-CC75F3A91906}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apollo.ASPNetCore.Module4.RestaurantReviews", "Apollo.ASPNetCore.Module4.Controllers\Apollo.ASPNetCore.Module4.RestaurantReviews.csproj", "{5A12AF87-9F9F-4ECE-99CC-CC75F3A91906}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module5", "Module5", "{C048D1B3-0AB9-448C-A0AE-104975C6CBA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apollo.ASPNetCore.Module5.RestaurantReviews", "Apollo.ASPNetCore.Module5.Models\Apollo.ASPNetCore.Module5.RestaurantReviews.csproj", "{E858ADCB-C57A-42D9-9058-7590B0C529F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{5A12AF87-9F9F-4ECE-99CC-CC75F3A91906}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A12AF87-9F9F-4ECE-99CC-CC75F3A91906}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A12AF87-9F9F-4ECE-99CC-CC75F3A91906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E858ADCB-C57A-42D9-9058-7590B0C529F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E858ADCB-C57A-42D9-9058-7590B0C529F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E858ADCB-C57A-42D9-9058-7590B0C529F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E858ADCB-C57A-42D9-9058-7590B0C529F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{535E1547-D0A6-4418-BAAB-467EBD260E2A} = {E9AF875C-84D8-4AE3-A470-5ECF8EE5D91B}
 		{76616EA4-5CE9-4034-9233-9702605A42EF} = {1588671E-C335-44D4-A45D-91B7CA98A682}
 		{5A12AF87-9F9F-4ECE-99CC-CC75F3A91906} = {658E6439-C27E-4BF1-B245-BCD430674113}
+		{E858ADCB-C57A-42D9-9058-7590B0C529F2} = {C048D1B3-0AB9-448C-A0AE-104975C6CBA8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B51C46E-49D0-4888-8013-74D50145EA9D}

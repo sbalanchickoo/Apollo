@@ -1,14 +1,14 @@
-﻿using Apollo.ASPNetCore.Module4.RestaurantReviews.Interfaces;
-using Apollo.ASPNetCore.Module4.RestaurantReviews.Models;
+﻿using Apollo.ASPNetCore.Module5.RestaurantReviews.Interfaces;
+using Apollo.ASPNetCore.Module5.RestaurantReviews.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Routing;
-using Apollo.ASPNetCore.Module4.RestaurantReviews.Repositories;
+using Apollo.ASPNetCore.Module5.RestaurantReviews.Repositories;
 
-namespace Apollo.ASPNetCore.Module4.RestaurantReviews
+namespace Apollo.ASPNetCore.Module5.RestaurantReviews
 {
     public class Startup
     {

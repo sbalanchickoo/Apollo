@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Apollo.ASPNetCore.Module4.RestaurantReviews
+namespace Apollo.ASPNetCore.Module5.RestaurantReviews
 {
     public class Program
     {
