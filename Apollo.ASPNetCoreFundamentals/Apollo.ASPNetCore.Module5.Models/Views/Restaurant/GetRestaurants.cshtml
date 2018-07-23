@@ -1,0 +1,39 @@
+﻿@model Apollo.ASPNetCore.Module5.RestaurantReviews.ViewModels.RestaurantViewModel
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        table, th, td {
+            border: 1px groove;
+        }
+        th {
+            background-color: lightgray;
+        }
+        tr {
+            
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <h1>@Model.Greeting</h1>
+    <table>
+        <thead>Restaurants List</thead>
+        <tr></tr>
+        <tr>
+            <th>Restaurant Name</th>
+            <th>Location</th>
+        </tr>
+        @foreach (var restaurant in @Model.Restaurants)
+        {
+            <tr>
+                <td>@restaurant.Name</td>
+                <td>@restaurant.Location</td>
+                <td>
+                    <a href="/Restaurant/GetRestaurantDetail/@restaurant.Id">@restaurant.Name</a></td>
+                 <td>   <a asp-action="GetRestaurantDetail" asp-route-id="@restaurant.Id">Tag helper</a>
+                </td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

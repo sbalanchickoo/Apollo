@@ -11,10 +11,12 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Interfaces
 
         void Remove(string restaurantName);
 
-        void GetRestaurantByName(string restaurantName);
+        IEnumerable<Restaurant> GetRestaurantByName(string restaurantName);
 
-        void GetRestaurantByLocation(string location);
+        IEnumerable<Restaurant> GetRestaurantByLocation(string location);
 
         void GetRestaurantByCuisine(string cuisine);
+
+        Restaurant GetRestaurantById(int id);
     }
 }

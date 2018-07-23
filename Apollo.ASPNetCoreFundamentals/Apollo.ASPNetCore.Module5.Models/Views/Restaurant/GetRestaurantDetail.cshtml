@@ -1,35 +1,25 @@
-﻿@model Apollo.ASPNetCore.Module5.RestaurantReviews.ViewModels.RestaurantViewModel
+﻿@model Apollo.ASPNetCore.Module5.RestaurantReviews.ViewModels.RestaurantDetailViewModel
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <style>
         table, th, td {
             border: 1px groove;
         }
+
         th {
             background-color: lightgray;
         }
+
         tr {
-            
         }
     </style>
     <title></title>
 </head>
 <body>
     <h1>@Model.Greeting</h1>
-    <table>
-        <thead>Restaurants List</thead>
-        <tr></tr>
-        <tr>
-            <th>Restaurant Name</th>
-            <th>Location</th>
-        </tr>
-        @foreach (var restaurant in @Model.Restaurants)
-        {
-            <tr>
-                <td>@restaurant.Name</td>
-                <td>@restaurant.Location</td>
-            </tr>
-        }
-    </table>
+        <div>@Model.Restaurant.Name</div>
+        <div>@Model.Restaurant.Location</div>
+    <br/>
+    <a asp-action="GetRestaurants" asp-controller="Restaurant">Go back to index</a>
 </body>
 </html>
