@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,11 +49,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataModels\NinjaDataContext.cs" />
+    <Compile Include="Migrations\201807241525263_Initial.cs" />
+    <Compile Include="Migrations\201807241525263_Initial.Designer.cs">
+      <DependentUpon>201807241525263_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807241557032_Initial1.cs" />
+    <Compile Include="Migrations\201807241557032_Initial1.Designer.cs">
+      <DependentUpon>201807241557032_Initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807241559555_Initial2.cs" />
+    <Compile Include="Migrations\201807241559555_Initial2.Designer.cs">
+      <DependentUpon>201807241559555_Initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807241622586_Initial4.cs" />
+    <Compile Include="Migrations\201807241622586_Initial4.Designer.cs">
+      <DependentUpon>201807241622586_Initial4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Clan.cs" />
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\Equipment.cs" />
+    <Compile Include="Models\Ninja.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201807241525263_Initial.resx">
+      <DependentUpon>201807241525263_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807241557032_Initial1.resx">
+      <DependentUpon>201807241557032_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807241559555_Initial2.resx">
+      <DependentUpon>201807241559555_Initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807241622586_Initial4.resx">
+      <DependentUpon>201807241622586_Initial4.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

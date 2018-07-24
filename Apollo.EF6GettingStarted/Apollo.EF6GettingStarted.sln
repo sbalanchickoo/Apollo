@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo.EF6GettingStarted.Module2.Intro", "Apollo.EF6GettingStarted.Module2.Intro\Apollo.EF6GettingStarted.Module2.Intro.csproj", "{F2C5A932-A9B1-47F3-89D6-B4CA37AADAFF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module2", "Module2", "{62D7F0D3-445C-4078-8B45-8AD7465EF16A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2C5A932-A9B1-47F3-89D6-B4CA37AADAFF} = {62D7F0D3-445C-4078-8B45-8AD7465EF16A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC72951A-3457-43DF-8C85-B12137B8B10A}

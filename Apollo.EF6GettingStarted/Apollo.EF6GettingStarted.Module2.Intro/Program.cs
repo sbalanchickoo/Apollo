@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Apollo.EF6GettingStarted.Module2.Intro.Models;
 
 namespace Apollo.EF6GettingStarted.Module2.Intro
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            Equipment Eq1 = new Equipment();
+            Eq1.Type = EquipmentType.Heavy;
         }
     }
 }
+
