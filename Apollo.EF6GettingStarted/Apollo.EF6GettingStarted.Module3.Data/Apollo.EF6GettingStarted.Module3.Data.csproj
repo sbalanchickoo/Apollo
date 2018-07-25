@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2C5A932-A9B1-47F3-89D6-B4CA37AADAFF}</ProjectGuid>
+    <ProjectGuid>{3A6F5663-CC13-448D-B937-BBC84C902F9D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Apollo.EF6GettingStarted.Module2.Intro</RootNamespace>
-    <AssemblyName>Apollo.EF6GettingStarted.Module2.Intro</AssemblyName>
+    <RootNamespace>Apollo.EF6GettingStarted.Module3.Data</RootNamespace>
+    <AssemblyName>Apollo.EF6GettingStarted.Module3.Data</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataModels\NinjaDataContext.cs" />
+    <Compile Include="Implementations\EFNinjaOperations.cs" />
+    <Compile Include="Interfaces\INinja.cs" />
     <Compile Include="Migrations\201807241525263_Initial.cs" />
     <Compile Include="Migrations\201807241525263_Initial.Designer.cs">
       <DependentUpon>201807241525263_Initial.cs</DependentUpon>
@@ -66,13 +68,13 @@
     <Compile Include="Migrations\201807241622586_Initial4.Designer.cs">
       <DependentUpon>201807241622586_Initial4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807242100116_addidentitycolumn.cs" />
-    <Compile Include="Migrations\201807242100116_addidentitycolumn.Designer.cs">
-      <DependentUpon>201807242100116_addidentitycolumn.cs</DependentUpon>
+    <Compile Include="Migrations\201807242115383_adduniqueindexcolumn.cs" />
+    <Compile Include="Migrations\201807242115383_adduniqueindexcolumn.Designer.cs">
+      <DependentUpon>201807242115383_adduniqueindexcolumn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807242111153_adduniqueindexcolumn.cs" />
-    <Compile Include="Migrations\201807242111153_adduniqueindexcolumn.Designer.cs">
-      <DependentUpon>201807242111153_adduniqueindexcolumn.cs</DependentUpon>
+    <Compile Include="Migrations\201807242125030_indexadded.cs" />
+    <Compile Include="Migrations\201807242125030_indexadded.Designer.cs">
+      <DependentUpon>201807242125030_indexadded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Clan.cs" />
@@ -99,11 +101,11 @@
     <EmbeddedResource Include="Migrations\201807241622586_Initial4.resx">
       <DependentUpon>201807241622586_Initial4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807242100116_addidentitycolumn.resx">
-      <DependentUpon>201807242100116_addidentitycolumn.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807242115383_adduniqueindexcolumn.resx">
+      <DependentUpon>201807242115383_adduniqueindexcolumn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807242111153_adduniqueindexcolumn.resx">
-      <DependentUpon>201807242111153_adduniqueindexcolumn.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807242125030_indexadded.resx">
+      <DependentUpon>201807242125030_indexadded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
