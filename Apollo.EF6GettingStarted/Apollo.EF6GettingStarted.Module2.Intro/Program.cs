@@ -1,4 +1,4 @@
-﻿using Apollo.EF6GettingStarted.Module2.Intro.Models;
+﻿using Apollo.EFGettingStarted.Shared.Models;
 
 namespace Apollo.EF6GettingStarted.Module2.Intro
 {

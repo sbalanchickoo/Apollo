@@ -1,7 +1,5 @@
-﻿using System;
-using Apollo.EF6GettingStarted.Module3.Data.DataModels;
-using Apollo.EF6GettingStarted.Module3.Intro.DataModels;
-using Apollo.EF6GettingStarted.Module3.Intro.Models;
+﻿using Apollo.EFGettingStarted.EFRepo.Implementations;
+using Apollo.EFGettingStarted.Shared.Interfaces;
 
 namespace Apollo.EF6GettingStarted.Module3.Intro
 {
@@ -9,10 +7,14 @@ namespace Apollo.EF6GettingStarted.Module3.Intro
     {
         public static void Main(string[] args)
         {
-            NinjaOperations.AddNinjaClan();
-        }
+            INinja ininja;
+            ininja = new EFNinjaOperations();
 
-        
+            ininja.GetAllClans();
+            ininja.AddClan("first");
+            System.Console.WriteLine("The end.");
+            System.Console.ReadLine();
+        }
     }
 }
 

@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3A6F5663-CC13-448D-B937-BBC84C902F9D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Apollo.EF6GettingStarted.Module3.Data</RootNamespace>
-    <AssemblyName>Apollo.EF6GettingStarted.Module3.Data</AssemblyName>
+    <ProjectGuid>{F934B4F8-C24B-4AEA-9BD2-D6B8FECFF261}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apollo.EFGettingStarted.Shared</RootNamespace>
+    <AssemblyName>Apollo.EFGettingStarted.Shared</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -49,18 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Interfaces\INinja.cs" />
+    <Compile Include="Models\Clan.cs" />
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\Equipment.cs" />
+    <Compile Include="Models\Ninja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Apollo.EFGettingStarted..Shared\Apollo.EFGettingStarted.Shared.csproj">
-      <Project>{f934b4f8-c24b-4aea-9bd2-d6b8fecff261}</Project>
-      <Name>Apollo.EFGettingStarted.Shared</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Apollo.EFGettingStarted.EFRepo\Apollo.EFGettingStarted.EFRepo.csproj">
-      <Project>{C2705BE7-8124-426D-AB16-1B198D085303}</Project>
-      <Name>Apollo.EFGettingStarted.EFRepo</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
