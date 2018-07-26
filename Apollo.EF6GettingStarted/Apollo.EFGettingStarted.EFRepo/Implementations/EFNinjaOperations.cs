@@ -13,6 +13,7 @@ namespace Apollo.EFGettingStarted.EFRepo.Implementations
     {
         public void AddClan(string clanName)
         {
+            int a = 0;
             try
             {
                 using (var context = new NinjaDataContext())
@@ -29,11 +30,14 @@ namespace Apollo.EFGettingStarted.EFRepo.Implementations
             {
                 if (ex is DbUpdateException dbUpdateEx)
                 {
-                    if (dbUpdateEx.InnerException != null
-                            && dbUpdateEx.InnerException.InnerException != null)
+                    if (true
+                        //dbUpdateEx.InnerException != null
+                            //&& dbUpdateEx.InnerException.InnerException != null
+                            )
                     {
-                        if (dbUpdateEx.InnerException is SqlException sqlException)
+                        if (dbUpdateEx.InnerException.InnerException is SqlException sqlException)
                         {
+                            a = sqlException.Number;
                             switch (sqlException.Number)
                             {
                                 case 2627:  // Unique constraint error
@@ -41,17 +45,25 @@ namespace Apollo.EFGettingStarted.EFRepo.Implementations
                                 case 2601:  // Duplicated key row error
                                             // Constraint violation exception
                                             // A custom exception of yours for concurrency issues
+                                    break;
 
                                 default:
                                     // A custom exception of yours for other DB issues
-                                    throw new DatabaseAccessException(
+                                    throw new Exception(
                                       dbUpdateEx.Message, dbUpdateEx.InnerException);
                             }
                         }
 
-                        throw new DatabaseAccessException(dbUpdateEx.Message, dbUpdateEx.InnerException);
+                        throw new Exception(dbUpdateEx.Message, dbUpdateEx.InnerException);
                     }
+                    
                 }
+                
+            }
+            finally
+            {
+                Console.WriteLine(a);
+                Console.ReadLine();
             }
         }
 
