@@ -23,8 +23,8 @@ namespace Apollo.EFGettingStarted.EFRepo.DataModels
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
-        public DbSet<Ninja> Ninjas { get; set; }
+        public virtual DbSet<Ninja> Ninjas { get; set; }
         public virtual DbSet<Clan> Clans { get; set; }
-        public DbSet<Equipment> Equipments { get; set; }
+        public virtual DbSet<Equipment> Equipments { get; set; }
     }
 }
