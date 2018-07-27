@@ -24,7 +24,7 @@ namespace Apollo.EFGettingStarted.EFRepo.DataModels
         }
 
         public DbSet<Ninja> Ninjas { get; set; }
-        public DbSet<Clan> Clans { get; set; }
+        public virtual DbSet<Clan> Clans { get; set; }
         public DbSet<Equipment> Equipments { get; set; }
     }
 }
