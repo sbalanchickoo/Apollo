@@ -11,12 +11,19 @@ namespace Apollo.EFGettingStarted.EFRepo.Implementations
 {
     public class EFNinjaOperations : INinja
     {
+        private NinjaDataContext _context;
+        
+        public EFNinjaOperations(NinjaDataContext context)
+        {
+            _context = context;
+        }
+
         public void AddClan(string clanName)
         {
-            int a = 0;
-            try
-            {
-                using (var context = new NinjaDataContext())
+            //int a = 0;
+            //try
+            //{
+                using (var context = _context)
                 {
                     Clan newClan = new Clan
                     {
@@ -25,47 +32,47 @@ namespace Apollo.EFGettingStarted.EFRepo.Implementations
                     context.Clans.Add(newClan);
                     context.SaveChanges();
                 }
-            }
-            catch (Exception ex)
-            {
-                if (ex is DbUpdateException dbUpdateEx)
-                {
-                    if (true
-                        //dbUpdateEx.InnerException != null
-                            //&& dbUpdateEx.InnerException.InnerException != null
-                            )
-                    {
-                        if (dbUpdateEx.InnerException.InnerException is SqlException sqlException)
-                        {
-                            a = sqlException.Number;
-                            switch (sqlException.Number)
-                            {
-                                case 2627:  // Unique constraint error
-                                case 547:   // Constraint check violation
-                                case 2601:  // Duplicated key row error
-                                            // Constraint violation exception
-                                            // A custom exception of yours for concurrency issues
-                                    break;
+            //}
+            //catch (Exception ex)
+            //{
+            //    if (ex is DbUpdateException dbUpdateEx)
+            //    {
+            //        if (true
+            //            //dbUpdateEx.InnerException != null
+            //                //&& dbUpdateEx.InnerException.InnerException != null
+            //                )
+            //        {
+            //            if (dbUpdateEx.InnerException.InnerException is SqlException sqlException)
+            //            {
+            //                a = sqlException.Number;
+            //                switch (sqlException.Number)
+            //                {
+            //                    case 2627:  // Unique constraint error
+            //                    case 547:   // Constraint check violation
+            //                    case 2601:  // Duplicated key row error
+            //                                // Constraint violation exception
+            //                                // A custom exception of yours for concurrency issues
+            //                        break;
 
-                                default:
-                                    // A custom exception of yours for other DB issues
-                                    throw new Exception(
-                                      dbUpdateEx.Message, dbUpdateEx.InnerException);
-                            }
-                        }
+            //                    default:
+            //                        // A custom exception of yours for other DB issues
+            //                        throw new Exception(
+            //                          dbUpdateEx.Message, dbUpdateEx.InnerException);
+            //                }
+            //            }
 
-                        throw new Exception(dbUpdateEx.Message, dbUpdateEx.InnerException);
-                    }
+            //            throw new Exception(dbUpdateEx.Message, dbUpdateEx.InnerException);
+            //        }
                     
                 }
                 
-            }
-            finally
-            {
-                Console.WriteLine(a);
-                Console.ReadLine();
-            }
-        }
+            //}
+            //finally
+            //{
+            //    Console.WriteLine(a);
+            //    Console.ReadLine();
+            //}
+        //}
 
         public string AddEquipment(string equipmentName)
         {
@@ -79,7 +86,12 @@ namespace Apollo.EFGettingStarted.EFRepo.Implementations
 
         public List<Clan> GetAllClans()
         {
-            throw new System.NotImplementedException();
+            List<Clan> clans = new List<Clan>();
+            using (var context = _context)
+            {
+                clans = context.Clans.ToList();
+            }
+            return clans;
         }
 
         public List<Equipment> GetAllEquipments()
@@ -112,14 +124,9 @@ namespace Apollo.EFGettingStarted.EFRepo.Implementations
             throw new System.NotImplementedException();
         }
 
-        List<Clan> INinja.GetAllClans()
+        List<Clan> INinjaGetAllClans()
         {
-            List<Clan> clans = new List<Clan>();
-            using (var context = new NinjaDataContext())
-            {
-                clans = context.Clans.ToList();
-            }
-            return clans;
+            throw new System.NotImplementedException();
         }
 
         List<Equipment> INinja.GetAllEquipments()
