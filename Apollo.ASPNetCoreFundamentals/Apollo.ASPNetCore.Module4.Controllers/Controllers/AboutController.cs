@@ -2,10 +2,10 @@
 
 namespace Apollo.ASPNetCore.Module4.RestaurantReviews.Controllers
 {
-    [Route("about")]
+    //[Route("about")]
     public class AboutController
     {
-        [Route("phone")]
+        //[Route("phone")]
         public string Phone()
         {
             return "100";

@@ -5,7 +5,7 @@ using Apollo.ASPNetCore.Module5.RestaurantReviews.Models;
 
 namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Controllers
 {
-    [Route("[controller]/[action]/{id?}")]
+    [Route("[controller]/[action]/[id?]")]
     public class RestaurantController : Controller
     {
         private IRestaurant _restaurant { get; set; }
@@ -17,10 +17,9 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Controllers
             _greeting = greeting;
         }
 
-        public IActionResult GetRestaurants()
+        public IActionResult GetRestaurants(RestaurantViewModel restaurantViewModel)
         {
-            var model = new RestaurantViewModel(_greeting, _restaurant);
-            return View(model);
+            return View(restaurantViewModel);
         }
 
         public IActionResult GetRestaurantDetail(int id)

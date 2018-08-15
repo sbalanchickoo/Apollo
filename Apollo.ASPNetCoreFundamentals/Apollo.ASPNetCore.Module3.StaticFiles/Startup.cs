@@ -29,11 +29,16 @@ namespace Apollo.ASPNetCore.Module3.StaticFiles
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseFileServer();
+            //app.UseWelcomePage(new WelcomePageOptions
+            //{
+            //    Path = "/wp1"
+            //});
+            //app.UseFileServer();
             app.UseStaticFiles();
-            
+            app.UseDefaultFiles();
             app.Run(async (context) =>
             {
+                //throw new System.Exception();
                 var greeting = greeter.GetMessage();
                 await context.Response.WriteAsync(greeting);
             });

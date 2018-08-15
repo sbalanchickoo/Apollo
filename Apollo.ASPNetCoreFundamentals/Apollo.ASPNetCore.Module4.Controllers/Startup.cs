@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Routing;
 using Apollo.ASPNetCore.Module4.RestaurantReviews.Repositories;
+//using Apollo.ASPNetCore.Module4.RestaurantReviews.Controllers;
 
 namespace Apollo.ASPNetCore.Module4.RestaurantReviews
 {
@@ -46,7 +47,7 @@ namespace Apollo.ASPNetCore.Module4.RestaurantReviews
 
         private void ConfigureRoutes(IRouteBuilder obj)
         {
-            obj.MapRoute("Default", "{controller}/{action}");
+            obj.MapRoute("Default", "{controller=About}/{action=Phone}/{id?}");
         }
     }
 }
