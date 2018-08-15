@@ -46,7 +46,7 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews
 
         private void ConfigureRoutes(IRouteBuilder obj)
         {
-            obj.MapRoute("Default", "{controller}/{action}");
+            //obj.MapRoute("Default", "{controller}/{action}");
         }
     }
 }
