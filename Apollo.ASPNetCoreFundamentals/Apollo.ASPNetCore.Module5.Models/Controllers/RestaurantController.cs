@@ -27,6 +27,7 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Controllers
 
         }
 
+        [Route("{id?}")]
         public IActionResult GetRestaurantDetail(int id)
         {
             RestaurantDetailViewModel viewModel = new RestaurantDetailViewModel();
@@ -35,6 +36,11 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Controllers
             viewModel.Greeting = _greeting;
             return View(viewModel);
             //return 
+        }
+
+        public IActionResult Create()
+        {
+            return View();
         }
     }
 }
