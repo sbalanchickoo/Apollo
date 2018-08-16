@@ -12,6 +12,8 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Models
 
         public decimal Rating { get; set; }
 
+        public Budget RestaurantBudget { get; set; }
+
         public List<Cuisine> Cuisine { get; set; } 
     }
 }

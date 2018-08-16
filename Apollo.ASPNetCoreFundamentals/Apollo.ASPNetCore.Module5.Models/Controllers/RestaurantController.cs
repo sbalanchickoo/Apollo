@@ -10,11 +10,13 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Controllers
     {
         private IRestaurant _restaurant { get; set; }
         private IGreeting _greeting { get; set; }
+        private ICuisine _cuisine { get; set; }
 
-        public RestaurantController(IRestaurant restaurant, IGreeting greeting)
+        public RestaurantController(IRestaurant restaurant, IGreeting greeting, ICuisine cuisine)
         {
             _restaurant = restaurant;
             _greeting = greeting;
+            _cuisine = cuisine;
         }
 
         public IActionResult GetRestaurants(RestaurantViewModel restaurantViewModel)
@@ -38,9 +40,29 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Controllers
             //return 
         }
 
+        [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            CreateViewModel viewModel = new CreateViewModel();
+            viewModel.Restaurant = new Restaurant();
+            viewModel.Cuisines = _cuisine.GetAllCuisines();
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public IActionResult Create(RestaurantEditViewModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                Restaurant newRestaurant = new Restaurant
+                {
+                    Id = model.Id,
+                    Name = model.Name,
+                    RestaurantBudget = model.RestaurantBudget
+                };
+                
+            }
+            return View(viewModel);
         }
     }
 }
