@@ -17,7 +17,7 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IGreeting, Greeting>();
-            services.AddScoped<IRestaurant, RestaurantStaticRepo>();
+            services.AddSingleton<IRestaurant, RestaurantStaticRepo>();
             services.AddScoped<ICuisine, CuisineStaticRepo>();
             services.AddMvc();
         }

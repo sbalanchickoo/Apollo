@@ -13,9 +13,13 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Repositories
             new Restaurant{Id = 2, Location = "London", Rating = 0, Name = "Dominos"}
         };
 
-        public void Add(Restaurant restaurant)
+        public Restaurant Add(Restaurant restaurant)
         {
-            throw new System.NotImplementedException();
+            int id = _restaurants.Max(r => r.Id) + 1;
+            Restaurant newRestaurant = restaurant;
+            newRestaurant.Id = id;
+            _restaurants.Add(newRestaurant);
+            return newRestaurant;
         }
 
         public IEnumerable<Restaurant> GetAll()

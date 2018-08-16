@@ -6,6 +6,7 @@ using Apollo.ASPNetCore.Module5.RestaurantReviews.Models;
 namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Controllers
 {
     [Route("[controller]/[action]")]
+    [Route("")]
     public class RestaurantController : Controller
     {
         private IRestaurant _restaurant { get; set; }
@@ -19,14 +20,13 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Controllers
             _cuisine = cuisine;
         }
 
+        [Route("[controller]")]
         public IActionResult GetRestaurants(RestaurantViewModel restaurantViewModel)
         {
             RestaurantViewModel viewModel = new RestaurantViewModel();
             viewModel.Restaurants = _restaurant.GetAll();
             viewModel.Greeting = _greeting;
             return View(viewModel);
-            //return new ObjectResult(_restaurant);
-
         }
 
         [Route("{id?}")]
@@ -34,35 +34,42 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Controllers
         {
             RestaurantDetailViewModel viewModel = new RestaurantDetailViewModel();
             Restaurant restaurant = _restaurant.GetRestaurantById(id);
-            viewModel.Restaurant = restaurant;
-            viewModel.Greeting = _greeting;
-            return View(viewModel);
-            //return 
+            if (!(restaurant == null))
+            {
+                viewModel.Restaurant = restaurant;
+                viewModel.Greeting = _greeting;
+                return View(viewModel);
+            }
+            else
+            {
+                return RedirectToAction(nameof(GetRestaurants));
+            }
         }
 
         [HttpGet]
         public IActionResult Create()
         {
-            CreateViewModel viewModel = new CreateViewModel();
-            viewModel.Restaurant = new Restaurant();
-            viewModel.Cuisines = _cuisine.GetAllCuisines();
-            return View(viewModel);
+            return View();
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(RestaurantEditViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 Restaurant newRestaurant = new Restaurant
                 {
-                    Id = model.Id,
                     Name = model.Name,
                     RestaurantBudget = model.RestaurantBudget
                 };
-                
+                newRestaurant = _restaurant.Add(newRestaurant);
+                return RedirectToAction(nameof(GetRestaurantDetail),new { id = newRestaurant.Id });
             }
-            return View(viewModel);
+            else
+            {
+                return View();
+            }
         }
     }
 }

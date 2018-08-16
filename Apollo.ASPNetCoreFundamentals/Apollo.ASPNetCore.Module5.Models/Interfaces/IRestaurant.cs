@@ -7,7 +7,7 @@ namespace Apollo.ASPNetCore.Module5.RestaurantReviews.Interfaces
     {
         IEnumerable<Restaurant> GetAll();
 
-        void Add(Restaurant restaurant);
+        Restaurant Add(Restaurant restaurant);
 
         void Remove(string restaurantName);
 

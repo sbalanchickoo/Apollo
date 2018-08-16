@@ -1,17 +1,17 @@
 ﻿@using Apollo.ASPNetCore.Module5.RestaurantReviews.Models
-@using Apollo.ASPNetCore.Module5.RestaurantReviews.ViewModels
-@model CreateViewModel
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Create</title>
-</head>
-<body>
-    <form method="post"></form>
-    <input type="text" name="Name" value="" />
-    <input asp-for="Restaurant.Name" />
-    <select asp-for="Restaurant.RestaurantBudget" 
-            asp-items="Html.GetEnumSelectList<Budget>()">
-    </select>
-    <input type="submit" name="Save" value="Save" />
-</body>
-</html>
+@model Restaurant
+
+    <form method="post">
+        <div>
+        <label asp-for="Name" ></label>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div>
+            <label asp-for="RestaurantBudget"></label>
+            <select asp-for="RestaurantBudget"
+                    asp-items="Html.GetEnumSelectList<Budget>()"></select>
+            <span asp-validation-for="RestaurantBudget"></span>
+        </div>
+        <input type="submit" name="Save" value="Save" />
+    </form>
