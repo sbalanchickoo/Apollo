@@ -1,0 +1,25 @@
+﻿@model Apollo.ASPNetCore.Module6.RestaurantReviews.ViewModels.RestaurantDetailViewModel
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        table, th, td {
+            border: 1px groove;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        tr {
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <h1>@Model.Greeting.GetMessage()</h1>
+        <div>@Model.Restaurant.Name</div>
+        <div>@Model.Restaurant.Location</div>
+    <br/>
+    <a asp-action="GetRestaurants" asp-controller="Restaurant">Go back to index</a>
+</body>
+</html>

@@ -1,4 +1,4 @@
-flag = None
+flag = True
 
 if flag:
     print("true")

@@ -1,0 +1,17 @@
+﻿@using Apollo.ASPNetCore.Module6.RestaurantReviews.Models
+@model Restaurant
+
+    <form method="post">
+        <div>
+        <label asp-for="Name" ></label>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div>
+            <label asp-for="RestaurantBudget"></label>
+            <select asp-for="RestaurantBudget"
+                    asp-items="Html.GetEnumSelectList<Budget>()"></select>
+            <span asp-validation-for="RestaurantBudget"></span>
+        </div>
+        <input type="submit" name="Save" value="Save" />
+    </form>
