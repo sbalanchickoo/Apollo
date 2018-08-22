@@ -3,9 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <AssemblyName>Apollo.ASPNetCore.Module6.RestaurantReviews</AssemblyName>
+    <UserSecretsId>bdada1ed-5bf5-42ed-86f8-4ab32dae3697</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="EFModels\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -16,6 +18,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0"></DotNetCliToolReference>
   </ItemGroup>
 
 </Project>
