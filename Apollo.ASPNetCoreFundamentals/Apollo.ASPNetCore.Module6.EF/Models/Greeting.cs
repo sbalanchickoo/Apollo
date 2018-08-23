@@ -5,15 +5,16 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Models
 {
     public class Greeting : IGreeting
     {
-        private IConfiguration _configuration;
+        public IConfiguration Configuration { get; set; }
 
         public Greeting(IConfiguration configuration)
         {
-            _configuration = configuration;
+            Configuration = configuration;
         }
+
         public string GetMessage()
         {
-            string message = _configuration["Greeting"];
+            string message = Configuration["Greeting"];
             return message;
         }
     }
