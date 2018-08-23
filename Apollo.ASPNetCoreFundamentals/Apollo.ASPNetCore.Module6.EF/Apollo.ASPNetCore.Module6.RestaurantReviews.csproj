@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="EFModels\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
