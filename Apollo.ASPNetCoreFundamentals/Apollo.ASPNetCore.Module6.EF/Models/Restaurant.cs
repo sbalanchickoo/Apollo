@@ -5,20 +5,23 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Models
 {
     public class Restaurant
     {
-        public int Id { get; set; }
+        public int RestaurantId { get; set; }
 
         [Display(Name="Restaurant Name")]
         [Required]
-        public string Name { get; set; }
+        public string RestaurantName { get; set; }
 
         [Required]
-        public string Location { get; set; }
+        public string RestaurantLocation { get; set; }
 
-        public decimal Rating { get; set; }
+        public decimal RestaurantRating { get; set; }
 
         [Display(Name = "Restaurant Budget")]
         public Budget RestaurantBudget { get; set; }
 
-        public List<Cuisine> Cuisine { get; set; } 
+        public List<RestaurantCuisine> RestaurantCuisines { get; set; }
+
+        public int HeadChefId { get; set; }
+        public HeadChef HeadChef { get; set; }
     }
 }

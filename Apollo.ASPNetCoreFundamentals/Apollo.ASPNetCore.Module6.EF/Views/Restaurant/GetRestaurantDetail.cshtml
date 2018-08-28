@@ -17,8 +17,8 @@
 </head>
 <body>
     <h1>@Model.Greeting.GetMessage()</h1>
-        <div>@Model.Restaurant.Name</div>
-        <div>@Model.Restaurant.Location</div>
+        <div>@Model.Restaurant.RestaurantName</div>
+        <div>@Model.Restaurant.RestaurantLocation</div>
     <br/>
     <a asp-action="GetRestaurants" asp-controller="Restaurant">Go back to index</a>
 </body>

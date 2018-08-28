@@ -9,9 +9,9 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Repositories
     {
         private List<Cuisine> _cuisines = new List<Cuisine>
         {
-            new Cuisine { Id = 1, Name = "Chinese"},
-            new Cuisine { Id = 2, Name = "French"},
-            new Cuisine { Id = 3, Name = "Indian"}
+            new Cuisine { CuisineId = 1, CuisineName = "Chinese"},
+            new Cuisine { CuisineId = 2, CuisineName = "French"},
+            new Cuisine { CuisineId = 3, CuisineName = "Indian"}
         };
 
         public void AddCuisine(string cuisineName)

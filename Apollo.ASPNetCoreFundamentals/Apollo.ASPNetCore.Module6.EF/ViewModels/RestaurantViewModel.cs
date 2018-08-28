@@ -8,6 +8,6 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.ViewModels
     {
         public IEnumerable<Restaurant> Restaurants { get; set; }
 
-        public IGreeting Greeting { get; set; }
+        public IGreeter Greeting { get; set; }
     }
 }

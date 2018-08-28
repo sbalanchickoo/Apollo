@@ -9,15 +9,15 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Repositories
     {
         private List<Restaurant> _restaurants = new List<Restaurant>()
         {
-            new Restaurant{Id = 1, Location = "London", Rating = 0, Name = "McDonald's"},
-            new Restaurant{Id = 2, Location = "London", Rating = 0, Name = "Dominos"}
+            new Restaurant{RestaurantId = 1, RestaurantLocation = "London", RestaurantRating = 0, RestaurantName = "McDonald's"},
+            new Restaurant{RestaurantId = 2, RestaurantLocation = "London", RestaurantRating = 0, RestaurantName = "Dominos"}
         };
 
         public Restaurant Add(Restaurant restaurant)
         {
-            int id = _restaurants.Max(r => r.Id) + 1;
+            int id = _restaurants.Max(r => r.RestaurantId) + 1;
             Restaurant newRestaurant = restaurant;
-            newRestaurant.Id = id;
+            newRestaurant.RestaurantId = id;
             _restaurants.Add(newRestaurant);
             return newRestaurant;
         }
@@ -34,13 +34,13 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Repositories
 
         public Restaurant GetRestaurantById(int id)
         {
-            Restaurant restaurant = _restaurants.FirstOrDefault(r => r.Id == id);
+            Restaurant restaurant = _restaurants.FirstOrDefault(r => r.RestaurantId == id);
             return restaurant;
         }
 
         public IEnumerable<Restaurant> GetRestaurantByLocation(string location)
         {
-            List<Restaurant> restaurants = _restaurants.FindAll(r => r.Location == location);
+            List<Restaurant> restaurants = _restaurants.FindAll(r => r.RestaurantLocation == location);
             return restaurants;
         }
 

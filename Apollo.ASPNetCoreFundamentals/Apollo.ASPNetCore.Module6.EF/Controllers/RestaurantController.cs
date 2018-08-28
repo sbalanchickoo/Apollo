@@ -10,10 +10,10 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Controllers
     public class RestaurantController : Controller
     {
         private IRestaurant _restaurant { get; set; }
-        private IGreeting _greeting { get; set; }
+        private IGreeter _greeting { get; set; }
         private ICuisine _cuisine { get; set; }
 
-        public RestaurantController(IRestaurant restaurant, IGreeting greeting, ICuisine cuisine)
+        public RestaurantController(IRestaurant restaurant, IGreeter greeting, ICuisine cuisine)
         {
             _restaurant = restaurant;
             _greeting = greeting;
@@ -60,11 +60,11 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Controllers
             {
                 Restaurant newRestaurant = new Restaurant
                 {
-                    Name = model.Name,
-                    RestaurantBudget = model.RestaurantBudget
+                    RestaurantName = model.Name,
+                    //RestaurantBudget = model.RestaurantBudget
                 };
                 newRestaurant = _restaurant.Add(newRestaurant);
-                return RedirectToAction(nameof(GetRestaurantDetail),new { id = newRestaurant.Id });
+                return RedirectToAction(nameof(GetRestaurantDetail),new { id = newRestaurant.RestaurantId });
             }
             else
             {

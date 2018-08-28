@@ -3,14 +3,16 @@ using Apollo.ASPNetCore.Module6.RestaurantReviews.EFModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Migrations
 {
     [DbContext(typeof(RestaurantContext))]
-    partial class RestaurantContextModelSnapshot : ModelSnapshot
+    [Migration("20180823184439_m2m2")]
+    partial class m2m2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,31 +46,11 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Migrations
                     b.ToTable("Greeting");
                 });
 
-            modelBuilder.Entity("Apollo.ASPNetCore.Module6.RestaurantReviews.Models.HeadChef", b =>
-                {
-                    b.Property<int>("HeadChefId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("HeadChefName");
-
-                    b.Property<int>("RestaurantId");
-
-                    b.HasKey("HeadChefId");
-
-                    b.HasIndex("RestaurantId")
-                        .IsUnique();
-
-                    b.ToTable("HeadChef");
-                });
-
             modelBuilder.Entity("Apollo.ASPNetCore.Module6.RestaurantReviews.Models.Restaurant", b =>
                 {
                     b.Property<int>("RestaurantId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("HeadChefId");
 
                     b.Property<int>("RestaurantBudget");
 
@@ -81,9 +63,6 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Migrations
                     b.Property<decimal>("RestaurantRating");
 
                     b.HasKey("RestaurantId");
-
-                    b.HasIndex("HeadChefId")
-                        .IsUnique();
 
                     b.ToTable("Restaurant");
                 });
@@ -99,14 +78,6 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Migrations
                     b.HasIndex("CuisineId");
 
                     b.ToTable("RestaurantCuisine");
-                });
-
-            modelBuilder.Entity("Apollo.ASPNetCore.Module6.RestaurantReviews.Models.HeadChef", b =>
-                {
-                    b.HasOne("Apollo.ASPNetCore.Module6.RestaurantReviews.Models.Restaurant", "Restaurant")
-                        .WithOne("HeadChef")
-                        .HasForeignKey("Apollo.ASPNetCore.Module6.RestaurantReviews.Models.HeadChef", "RestaurantId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Apollo.ASPNetCore.Module6.RestaurantReviews.Models.RestaurantCuisine", b =>

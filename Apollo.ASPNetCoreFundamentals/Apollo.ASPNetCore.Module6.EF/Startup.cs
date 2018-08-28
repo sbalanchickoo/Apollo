@@ -16,7 +16,7 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IGreeting, Greeting>();
+            services.AddSingleton<IGreeter, Greeter>();
             services.AddSingleton<IRestaurant, RestaurantStaticRepo>();
             services.AddScoped<ICuisine, CuisineStaticRepo>();
             services.AddMvc();
@@ -26,7 +26,7 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews
         public void Configure(
             IApplicationBuilder app
             , IHostingEnvironment env
-            , IGreeting greeter
+            , IGreeter greeter
             , ILogger<Startup> logger)
         {
             if (env.IsDevelopment())

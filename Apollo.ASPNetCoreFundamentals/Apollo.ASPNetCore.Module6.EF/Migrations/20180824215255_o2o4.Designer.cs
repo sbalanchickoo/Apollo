@@ -3,14 +3,16 @@ using Apollo.ASPNetCore.Module6.RestaurantReviews.EFModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Migrations
 {
     [DbContext(typeof(RestaurantContext))]
-    partial class RestaurantContextModelSnapshot : ModelSnapshot
+    [Migration("20180824215255_o2o4")]
+    partial class o2o4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -68,8 +70,6 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("HeadChefId");
-
                     b.Property<int>("RestaurantBudget");
 
                     b.Property<string>("RestaurantLocation")
@@ -81,9 +81,6 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Migrations
                     b.Property<decimal>("RestaurantRating");
 
                     b.HasKey("RestaurantId");
-
-                    b.HasIndex("HeadChefId")
-                        .IsUnique();
 
                     b.ToTable("Restaurant");
                 });

@@ -7,6 +7,6 @@ namespace Apollo.ASPNetCore.Module6.RestaurantReviews.ViewModels
     {
         public Restaurant Restaurant { get; set; }
 
-        public IGreeting Greeting { get; set; }
+        public IGreeter Greeting { get; set; }
     }
 }

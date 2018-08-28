@@ -1,21 +1,14 @@
-﻿using Apollo.ASPNetCore.Module6.RestaurantReviews.Interfaces;
-using Microsoft.Extensions.Configuration;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Apollo.ASPNetCore.Module6.RestaurantReviews.Models
 {
-    public class Greeting : IGreeting
+    public class Greeting
     {
-        public IConfiguration Configuration { get; set; }
+        public int GreetingId { get; set; }
 
-        public Greeting(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        public string GetMessage()
-        {
-            string message = Configuration["Greeting"];
-            return message;
-        }
+        public string Message { get; set; }
     }
 }

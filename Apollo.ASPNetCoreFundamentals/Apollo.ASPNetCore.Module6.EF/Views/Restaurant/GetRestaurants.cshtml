@@ -26,11 +26,11 @@
         @foreach (var restaurant in @Model.Restaurants)
         {
             <tr>
-                <td>@restaurant.Name</td>
-                <td>@restaurant.Location</td>
+                <td>@restaurant.RestaurantName</td>
+                <td>@restaurant.RestaurantLocation</td>
                 <td>
-                    <a href="/Restaurant/GetRestaurantDetail/@restaurant.Id">@restaurant.Name</a></td>
-                 <td>   <a asp-action="GetRestaurantDetail" asp-route-id="@restaurant.Id">Tag helper</a>
+                    <a href="/Restaurant/GetRestaurantDetail/@restaurant.RestaurantId">@restaurant.RestaurantName</a></td>
+                 <td>   <a asp-action="GetRestaurantDetail" asp-route-id="@restaurant.RestaurantId">Tag helper</a>
                 </td>
             </tr>
         }
