@@ -16,7 +16,7 @@ namespace Apollo.EFCore.Module5.Bootstrapper
             ctx.GetService<ILoggerFactory>().AddProvider(new MyLoggerProvider());
 
             Viewer vw = new Viewer();
-            vw.Context = ctx;
+            vw.RestaurantReviews = ;
             vw.DisplayRestaurants();
 
             Console.ReadLine();

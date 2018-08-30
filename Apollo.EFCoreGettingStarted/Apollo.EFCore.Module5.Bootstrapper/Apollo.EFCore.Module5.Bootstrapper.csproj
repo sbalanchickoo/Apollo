@@ -9,7 +9,7 @@
     </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Apollo.EFCore.Module5.UI\Apollo.EFCore.Module5.UI.csproj" />
-    <ProjectReference Include="..\Apollo.EFCore.Shared.Models\Apollo.EFCore.Shared.csproj" />
+    <ProjectReference Include="..\Apollo.EFCore.Shared.Models\Apollo.EFCore.EF.csproj" />
   </ItemGroup>
 
 </Project>
