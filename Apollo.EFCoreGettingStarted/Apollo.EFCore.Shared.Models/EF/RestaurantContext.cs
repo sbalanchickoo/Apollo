@@ -1,15 +1,48 @@
-﻿using Apollo.ASPNetCore.Module6.RestaurantReviews.Models;
-using Apollo.EFCore.Shared.Models;
+﻿using Apollo.EFCore.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Apollo.EFCore.Shared.EF
 {
     public class RestaurantContext : DbContext
     {
-        public DbSet<Restaurant> Restaurant { get; set; }
-        public DbSet<Cuisine> Cuisine { get; set; }
-        public DbSet<Greeting> Greeting { get; set; }
-        public DbSet<HeadChef> HeadChef { get; set; }
+        private string _connectionString;
+        public string ConnectionString
+        {
+            get
+            {
+                if (_connectionString == null)
+                {
+                    _connectionString = @"Server = (localdb)\MSSQLLocalDB; Database = RestaurantReviews; Trusted_Connection = True; ";
+                }
+                return _connectionString;
+            }
+            set
+            {
+                _connectionString = value;
+            }
+        }
+
+        private RestaurantContext _context;
+        public RestaurantContext Context
+        {
+            get
+            {
+                if (_context == null)
+                {
+                    _context = new RestaurantContext();
+                }
+                return _context;
+            }
+            set
+            {
+                _context = value;
+            }
+        }
+
+
+        public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<Cuisine> Cuisines { get; set; }
+        public DbSet<HeadChef> HeadChefs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -36,7 +69,7 @@ namespace Apollo.EFCore.Shared.EF
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
         {
             dbContextOptionsBuilder.UseSqlServer(
-                "Server = (localdb)\\MSSQLLocalDB; Database = RestaurantReviews; Trusted_Connection = True; ");
+                ConnectionString);
         }
     }
 }

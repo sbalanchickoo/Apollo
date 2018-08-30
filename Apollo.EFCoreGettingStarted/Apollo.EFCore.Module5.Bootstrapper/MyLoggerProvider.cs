@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-namespace EFLogging
+namespace Apollo.EFCore.Module5.Bootstrapper
 {
     public class MyLoggerProvider : ILoggerProvider
     {

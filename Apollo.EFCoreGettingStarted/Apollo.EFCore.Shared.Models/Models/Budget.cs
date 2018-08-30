@@ -1,4 +1,4 @@
-﻿namespace Apollo.EFCore.Shared.Models.Models
+﻿namespace Apollo.EFCore.Shared.Models
 {
     public class Budget
     {

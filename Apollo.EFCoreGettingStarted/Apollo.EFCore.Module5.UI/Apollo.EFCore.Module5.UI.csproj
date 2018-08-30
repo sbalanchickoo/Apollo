@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Apollo.EFCore.Shared.Models\Apollo.EFCore.Shared.Models.csproj" />
+    <ProjectReference Include="..\Apollo.EFCore.Shared.Models\Apollo.EFCore.Shared.csproj" />
   </ItemGroup>
 
 </Project>
