@@ -7,7 +7,7 @@ namespace Apollo.EFCore.Module5.UI
     {
         public IRestaurantReviews RestaurantReviews { get; set; }
 
-        public void DisplayRestaurants()
+        public void StartApp()
         {
             var restaurants = RestaurantReviews.GetRestaurants();
             foreach (var restaurant in restaurants)
@@ -16,5 +16,4 @@ namespace Apollo.EFCore.Module5.UI
             }
         }
     }
-}
 }

@@ -1,7 +1,7 @@
 ﻿using Apollo.EFCore.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Apollo.EFCore.Shared.EF
+namespace Apollo.EFCore.EF.Models
 {
     public class RestaurantContext : DbContext
     {
