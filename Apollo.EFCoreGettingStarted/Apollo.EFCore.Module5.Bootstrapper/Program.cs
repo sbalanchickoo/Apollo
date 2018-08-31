@@ -12,9 +12,9 @@ namespace Apollo.EFCore.Module5.Bootstrapper
         {
             RestaurantContext ctx = new RestaurantContext();
             ctx.ConnectionString = @"Server = (localdb)\MSSQLLocalDB; Database = RestaurantReviews; Trusted_Connection = True; ";
-            ctx.GetService<ILoggerFactory>().AddProvider(new MyLoggerProvider());
+            //ctx.GetService<ILoggerFactory>().AddProvider(new MyLoggerProvider());
             RestaurantReviewsRepository repo = new RestaurantReviewsRepository();
-            repo.Context = ctx;
+            //repo.Context = ctx;
 
             Viewer vw = new Viewer();
             vw.RestaurantReviews = repo;

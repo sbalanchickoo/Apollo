@@ -22,24 +22,6 @@ namespace Apollo.EFCore.EF.Models
             }
         }
 
-        private RestaurantContext _context;
-        public RestaurantContext Context
-        {
-            get
-            {
-                if (_context == null)
-                {
-                    _context = new RestaurantContext();
-                }
-                return _context;
-            }
-            set
-            {
-                _context = value;
-            }
-        }
-
-
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Cuisine> Cuisines { get; set; }
         public DbSet<HeadChef> HeadChefs { get; set; }

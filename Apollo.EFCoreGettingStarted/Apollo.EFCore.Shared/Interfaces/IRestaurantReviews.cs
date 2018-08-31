@@ -6,5 +6,9 @@ namespace Apollo.EFCore.Shared.Interfaces
     public interface IRestaurantReviews
     {
         IEnumerable<Restaurant> GetRestaurants();
+
+        void CleanRepo();
+
+        void Initialize();
     }
 }

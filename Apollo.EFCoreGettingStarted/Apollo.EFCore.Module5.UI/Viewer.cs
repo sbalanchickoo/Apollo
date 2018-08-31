@@ -9,6 +9,9 @@ namespace Apollo.EFCore.Module5.UI
 
         public void StartApp()
         {
+            RestaurantReviews.CleanRepo();
+            RestaurantReviews.Initialize();
+
             var restaurants = RestaurantReviews.GetRestaurants();
             foreach (var restaurant in restaurants)
             {
