@@ -50,8 +50,9 @@ namespace Apollo.EFCore.EF.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
         {
-            dbContextOptionsBuilder.UseSqlServer(
-                ConnectionString);
+            //dbContextOptionsBuilder.UseSqlServer(
+            //    ConnectionString);
+            dbContextOptionsBuilder.UseSqlite()
         }
     }
 }

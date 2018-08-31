@@ -7,8 +7,10 @@ namespace Apollo.EFCore.Shared.Interfaces
     {
         IEnumerable<Restaurant> GetRestaurants();
 
-        void CleanRepo();
+        void DeleteAllRestaurants();
 
         void Initialize();
+
+        void AddRestaurantWithHeadChef();
     }
 }

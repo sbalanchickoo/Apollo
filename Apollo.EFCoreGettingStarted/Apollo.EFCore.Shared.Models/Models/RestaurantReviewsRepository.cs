@@ -7,44 +7,28 @@ namespace Apollo.EFCore.EF.Models
 {
     public class RestaurantReviewsRepository : IRestaurantReviews
     {
-        private RestaurantContext _restaurantContext;
-
-        public RestaurantContext Context
+        public void DeleteAllRestaurants()
         {
-            get
+            using (var context = new RestaurantContext())
             {
-                if (_restaurantContext == null)
-                {
-                    _restaurantContext = new RestaurantContext();
-                }
-                return _restaurantContext;
-            }
-            set { _restaurantContext = value; }
-        }
-
-
-        public void CleanRepo()
-        {
-            using (Context)
-            {
-                var restaurants = Context.Restaurants.ToList();
-                Context.RemoveRange(restaurants);
-                Context.SaveChanges();
+                var restaurants = context.Restaurants.ToList();
+                context.RemoveRange(restaurants);
+                context.SaveChanges();
             }
         }
 
         public IEnumerable<Restaurant> GetRestaurants()
         {
-            using (Context)
+            using (var context = new RestaurantContext())
             {
-                var restaurants = Context.Restaurants.ToList();
+                var restaurants = context.Restaurants.ToList();
                 return restaurants;
             }
         }
 
         public void Initialize()
         {
-            using (var context = RestaurantContext)
+            using (var context = new RestaurantContext())
             {
                 var restaurants = context.Restaurants.ToList();
                 int id;
