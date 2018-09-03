@@ -1,26 +1,27 @@
 ﻿using Apollo.EFCore.Shared.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Apollo.EFCore.EF.Models
 {
     public class RestaurantContext : DbContext
     {
-        private string _connectionString;
-        public string ConnectionString
-        {
-            get
-            {
-                if (_connectionString == null)
-                {
-                    _connectionString = @"Server = (localdb)\MSSQLLocalDB; Database = RestaurantReviews; Trusted_Connection = True; ";
-                }
-                return _connectionString;
-            }
-            set
-            {
-                _connectionString = value;
-            }
-        }
+        //private string _connectionString;
+        //public string ConnectionString
+        //{
+        //    get
+        //    {
+        //        if (_connectionString == null)
+        //        {
+        //            _connectionString = @"Server = (localdb)\MSSQLLocalDB; Database = RestaurantReviews; Trusted_Connection = True; ";
+        //        }
+        //        return _connectionString;
+        //    }
+        //    set
+        //    {
+        //        _connectionString = value;
+        //    }
+        //}
 
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Cuisine> Cuisines { get; set; }
@@ -45,14 +46,24 @@ namespace Apollo.EFCore.EF.Models
                 .WithOne(h => h.HeadChef)
                 .IsRequired();
 
+            foreach(var entityType in modelBuilder.Model.GetEntityTypes())
+            {
+                modelBuilder.Entity(entityType.Name).Property<DateTime>("LastModified");
+            }
+
             base.OnModelCreating(modelBuilder);
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
+        //protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
+        //{
+        //    dbContextOptionsBuilder.UseSqlServer(
+        //        ConnectionString);
+        //}
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //dbContextOptionsBuilder.UseSqlServer(
-            //    ConnectionString);
-            dbContextOptionsBuilder.UseSqlite()
+            optionsBuilder.UseSqlite("Data Source=..\\blogging.db");
         }
     }
 }
+

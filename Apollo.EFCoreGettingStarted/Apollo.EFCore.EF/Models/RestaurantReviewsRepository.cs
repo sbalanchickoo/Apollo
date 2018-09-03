@@ -1,5 +1,6 @@
 ﻿using Apollo.EFCore.Shared.Interfaces;
 using Apollo.EFCore.Shared.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -7,6 +8,11 @@ namespace Apollo.EFCore.EF.Models
 {
     public class RestaurantReviewsRepository : IRestaurantReviews
     {
+        public void AddRestaurantWithHeadChef()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public void DeleteAllRestaurants()
         {
             using (var context = new RestaurantContext())
@@ -30,6 +36,7 @@ namespace Apollo.EFCore.EF.Models
         {
             using (var context = new RestaurantContext())
             {
+                context.Database.Migrate();
                 var restaurants = context.Restaurants.ToList();
                 int id;
                 if (restaurants.Count == 0)
